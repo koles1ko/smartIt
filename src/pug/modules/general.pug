@@ -1,0 +1,42 @@
+.tabs
+    //- вкладки
+    .tab-link__wrapper 
+      .tab-link.js-trigger.active(data-tab="1") First item
+      .tab-link.js-trigger(data-tab="2") Second item
+    //- контент
+    .tab-content__wrapper 
+      .tab-content.js-content.active-tab(data-tab="1") content for "First item"
+      .tab-content.js-content(data-tab="2") content for "Second item"
+
+
+.breadcrumbs
+  .container
+    .breadcrumbs__inner
+      ul.breadcrumbs__list
+        li: a(href="#") Home
+        li: a(href="#") Product Page    
+
+
+.rating-wrapper
+  //- на span вешаем картинки на before
+  ul.rating
+    li.current(style="width:20%"): span.star1 
+    li: span.star2
+    li: span.star3
+    li: span.star4
+    li: span.star5
+
+//- чтоб юзать спрайты
+svg.story__image
+  use(xlink:href="img/sprite.svg#custom")    
+
+//- аккордеон без JS
+.accordion-item
+  input.accordion-input#faq-1-3(type="radio" name="faq")
+  label.accordion-title(for="faq-1-3") How one can choose his webhosting?
+  .accordion-info Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, vitae?
+
+//- аккордеон с JS
+.accordion-item.js-wrapper(data-tab="1")
+  .accordion-title.js-label(data-tab="1") How one can choose his webhosting?
+  .accordion-info Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, vitae?

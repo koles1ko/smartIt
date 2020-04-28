@@ -1,0 +1,94 @@
+.breadcrumbs{
+  &__inner{ // Позиционируем 45px сверху, 40px вниз
+    padding: 45px 0 40px;
+  }
+  &__list{
+    li{ // Выстраиваем в ряд
+      display: inline-block;
+      position: relative;
+      & + li{
+        padding-left: 24px;
+        &::before{ // Тире "-" между словами
+          content: '-';
+          position: absolute;
+          left: 8px;
+        }
+      }
+      &:last-child{ //Цвет для последнего элемента
+        a,
+        span{
+          // color:;
+        }
+      }
+    }
+    a{
+      // color:;
+    }
+  }
+}
+.rating{
+  &-wrapper{
+    max-width: 145px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 13px;
+  }
+  position: relative;
+  width: 120px;
+  height: 24px;
+  background: url(../img/svg/icons/two-stars.svg);
+  &-number{
+    @include font(24px, 500, #000, 24px);
+    margin-right: 9px;
+  }
+  li.current{
+    z-index: 1;
+    background: url(../img/svg/icons/two-stars.svg) left bottom;
+  }
+  [class*="star"]{ //все классы которые начинаются на "star"
+    position: absolute;
+    z-index: 5;
+    display: block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  } 
+  [class*="star"]:hover{
+    left: 0;
+    cursor: pointer;
+    background: url(../img/svg/icons/two-stars.svg) left bottom;
+    z-index: 2;
+  }
+  .star-1{left: 0;}
+  .star-1:hover{width: 24px;}
+  .star-2{left: 24px;}
+  .star-2:hover{width: 48px;}
+  .star-3{left: 48px;}
+  .star-3:hover{width: 72px;}
+  .star-4{left: 72px;}
+  .star-4:hover{width: 96px;}
+  .star-5{left: 96px;}
+  .star-5:hover{width: 120px;}
+}
+
+// аккордеон
+
+.accordion{
+  // сокрытие всех блоков не активных элементов. тут надо их скрыть
+  &__text {
+  }
+  // убираем родные инпуты
+  &__input{
+    appearance: none;
+    width: 0;
+    height: 0;
+    // position: absolute; при необходимости позиционирования
+  }
+  // проверка на "чек" и открытие этого элемента
+  &__input:checked ~ .accordion__text{
+  }
+  // смена значка на активном элементе
+  &__input:checked ~ .accordion__title::after{
+  }
+}  
