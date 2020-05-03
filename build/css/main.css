@@ -3778,4 +3778,6 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .reviews .slider-reviews__logo {
+    width: 100%; }
+  .reviews .slider-reviews__info {
     width: 100%; } }
