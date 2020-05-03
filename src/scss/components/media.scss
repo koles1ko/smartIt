@@ -1,0 +1,1374 @@
+@media(max-width: 1900px){ // 1280-1920  ширину в браузере выставлять на минимальное значение +1 пиксель
+  .points{
+    max-width: 360px;
+    height: 282px;
+    &__item{
+      margin-bottom: 15px;
+      margin-right: 18px;
+    }
+  }
+  .container{padding: 0 20px;}
+  .header{
+    &__work{
+      padding: 22px 40px 19px;
+      margin-left: 72px;
+    }
+  }
+  .intro{
+    &__title{
+      font-size: 64px;
+      line-height: 93px;
+    }
+    &__subtitle{
+      font-size: 24px;
+      line-height: 43px;
+    }
+    &__inner{
+      max-width: 1104px;
+      background-position-y: 80px;
+      min-height: 720px;
+    }
+    &__item{
+      width: 20px;
+      height: 20px;
+    }
+    &__location{
+      height: 308px;
+    }
+    &__location-australia{
+      bottom: 80px;
+      right: 100px;
+    }
+    &__location-china{
+      bottom: 340px;
+      right: 240px;
+    }
+    &__location-siberia{
+      top: 220px;
+      right: 270px;
+    }
+    &__location-volga{
+      top: 240px;
+      right: 334px;
+    }
+    &__location-iran{
+      top: 350px;
+      right: 371px;
+    }
+    &__location-litva{
+      top: 210px;
+      right: 480px;
+    }
+    &__location-poland{
+      top: 270px;
+      right: 500px;
+    }
+    &__location-africa{
+      bottom: 230px;
+      right: 464px;
+    }
+    &__location-columbia{
+      bottom: 220px;
+      left: 280px;
+    }
+    &__location-alaska{
+      top: 190px;
+      left: 30px;
+    }
+    &__location-canada{
+      top: 246px;
+      left: 167px;
+    }
+    &__location-southalaska{
+      top: 190px;
+      left: 110px;
+    }
+    &__location-usa{
+      top: 294px;
+      left: 222px;
+    }
+    &__location-brasil{
+      bottom: 203px;
+      left: 380px;
+    }
+    &__location-argentina{
+      bottom: 90px;
+      left: 345px;
+    }
+    &__location-southafrica{
+      bottom: 145px;
+      right: 470px;
+    }
+    &__location-niger{
+      bottom: 295px;
+      left: 525px;
+    }
+    &__location-uk{
+      left: 514px;
+      top: 243px;
+    }
+    &__location-egipt{
+      right: 477px;
+      bottom: 322px;
+    }
+    &__location-kz{
+      right: 376px;
+      top: 282px;
+    }
+    &__location-northaustralia{
+      right: 144px;
+      bottom: 140px;
+    }
+    &__location-korea{
+      right: 164px;
+      top: 290px;
+    }
+    &__location-sakhalin{
+      right: 48px;
+      top: 250px;
+    }
+    &__location-kamchatka{
+      right: 50px;
+      top: 180px;
+    }
+    &__location-yakutia{
+      right: 164px;
+      top: 180px;
+    }
+    &__description{
+      &--left.active{transform: translate(-105%, 150px);}
+      &--right.active{transform: translate(5%, 150px);}
+    }
+  }
+  .services{
+    padding-top: 50px;
+    &__item{
+      @include wrap-item(calc(50% - 12px), 422px);
+      padding: 0 50px;
+      // min-height: 422px;
+    }
+    &__item-name{
+      font-size: 36px;
+      line-height: 54px;
+      margin-left: 50px;
+    }
+    &__item-info{
+      padding: 0 70px;
+    }
+    &__item-text{
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+  .wwu{
+    .points-left{}
+    .points-right{}
+    &__text{
+      margin-left: 25px;
+      margin-right: 10px;
+    }
+    &__picture--left{max-width: 150px;}
+    &__picture--right{max-width: 180px;}
+  }
+  .reviews{
+    .slider-reviews{
+      &__logo{
+        padding-right: 60px;
+        img{
+          max-width: 255px;
+        }
+      }
+      &__info{
+        padding-left: 20px;
+        padding-right: 150px;
+      }
+      &__text{
+        &::before{
+          left: -10px;
+        }
+      }
+    }
+    .slick-next{
+      left: calc(100% - 100px);
+    }
+    .slick-prev{
+      right: calc(100% - 145px);
+    }
+    .slick-dots{
+      li{
+        &:nth-child(1)::after{width: 154px;}
+        &:nth-child(2)::after{width: 184px;}
+        &:nth-child(3)::after{width: 268px;}
+        &:nth-child(4)::after{width: 245px;}
+        &:nth-child(5)::after{width: 170px;}
+        &:nth-child(6)::after{width: 241px;}
+        &:nth-child(7)::after{width: 172px;}
+        &:nth-child(8)::after{width: 235px;}
+      }
+    }
+  }
+  .story{
+    & > .points{
+      display: none;
+    }
+    &__description{
+      padding: 80px 20px;
+      max-width: 483px;
+      width: 100%;
+      & > .points{
+        top: -150px;
+        left: -50px;
+      }
+    }
+    &__text{font-size: 16px;}
+    &__slider{max-width: 250px;}
+    &__item-number{
+      font-size: 64px;
+      line-height: 90px;
+    }
+
+  }
+  .faq{
+    &__inner{
+      min-height: 888px;
+      padding-bottom: 100px;
+    }
+    &__accordion{
+      max-width: 700px;
+      width: 100%;
+    }
+    .accordion{
+      &__item{
+        padding-left: 20px;
+      }
+      &__title{
+        padding-right: 0;
+      }
+    }
+    .faq-form{
+      &__wrapper{
+        max-width: 580px;
+        width: 100%;
+      }
+      &__check + .faq-form__check{margin-left: 40px;}
+      &__data .form-trigger{width: 522px;}
+    }
+  }
+  .about{
+    .points{
+      &--pink{
+        bottom: -109px;
+        left: -250px;
+      }
+    }
+  }
+  .news{
+    &__item-wrapper{
+      @include wrap-item(calc(50% - 12px), 422px);
+    }
+    &__title{
+      @include font(24px, 500, #000, 31px);
+    }
+    &__item-inner{
+      padding-left: 20px;
+      padding-top: 80px;
+      padding-right: 30px;
+    }
+    &__item-1 .points{
+      bottom: -150px;
+      right: -150px;
+    }
+    &__item-2 .points{
+      left: -117px;
+      top: auto;
+      bottom: -200px;
+    }
+    &__item-3 .points{
+      transform: rotate(90deg);
+      bottom: auto;
+      top: 100px;
+      right: -240px;
+    }
+    &__item-4 .points{
+      right: -130px;
+    }
+    &__item-blog,
+    &__item-news{
+      &::before{top: 30px;}
+    }
+    &__date-wrapper{margin-bottom: 16px;}
+    &__tags{
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+  .footer{
+    .points{display: none;}
+  }
+} 
+@media(max-width: 1280px){ // 768-1280   ширину в браузере выставлять на минимальное значение +1 пиксель
+
+  .section-title{
+    font-size: 36px;
+    line-height: 54px;
+  }
+  .section-description{
+    font-size: 14px;
+    line-height: 25px;
+    max-width: 510px;
+  }
+  .points{
+    max-width: 188px;
+    height: auto;
+    &__item{
+      width: 1px;
+      height: 1px;
+      margin-right: 10px;
+      margin-bottom: 9px;
+    }
+  }
+  .header{
+    border-bottom: none;
+    &__menu{display: none;}
+    &__btn{display: block;}
+  }
+  .intro{
+    padding-top: 0;
+    &__inner{
+      background-position-y: 45px;
+      min-height: 520px;
+      padding-top: 30px;
+    }
+    &__title{
+      font-size: 36px;
+      line-height: 54px;
+    }
+    &__subtitle{
+      font-size: 14px;
+      line-height: 25px;
+    }
+    &__item{
+      width: 14px;
+      height: 14px;
+    }
+    &__location{
+      height: 302px;
+    }
+    &__description{
+      width: 555px;
+      font-size: 12px;
+      line-height: 22px;
+      &--left,
+      &--right{
+        transform: translate(-50%, -1000px);
+        &.active{transform: translate(-50%, 20px);}
+      }
+    }
+    &__description-title--aqua,
+    &__description-title--blue{
+      font-size: 16px;
+      line-height: 29px;
+    }
+    &__description-info{
+      margin-bottom: 5px;
+    }
+    &__location-australia{
+      bottom: 85px;
+      right: 70px;
+    }
+    &__location-china{
+      bottom: 250px;
+      right: 162px;
+    }
+    &__location-siberia{
+      top: 150px;
+      right: 188px;
+    }
+    &__location-volga{
+      top: 160px;
+      right: 232px;
+    }
+    &__location-iran{
+      top: auto;
+      bottom: 270px;
+      right: 258px;
+    }
+    &__location-litva{
+      top: 140px;
+      right: 335px;
+    }
+    &__location-poland{
+      top: 180px;
+      right: 350px;
+    }
+    &__location-africa{
+      bottom: 180px;
+      right: 322px;
+    }
+    &__location-columbia{
+      bottom: 170px;
+      left: 195px;
+    }
+    &__location-alaska{
+      top: 124px;
+      left: 20px;
+    }
+    &__location-canada{
+      top: 161px;
+      left: 115px;
+    }
+    &__location-southalaska{
+      top: 124px;
+      left: 76px;
+    }
+    &__location-usa{
+      top: 194px;
+      left: 155px;
+    }
+    &__location-brasil{
+      bottom: 170px;
+      left: 264px;
+    }
+    &__location-argentina{
+      bottom: 97px;
+      left: 240px;
+    }
+    &__location-southafrica{
+      bottom: 131px;
+      right: 325px;
+    }
+    &__location-niger{
+      bottom: 234px;
+      left: 365px;
+    }
+    &__location-uk{
+      left: 358px;
+      top: 160px;
+    }
+    &__location-egipt{
+      right: 330px;
+      bottom: 253px;
+    }
+    &__location-kz{
+      right: 261px;
+      top: 186px;
+    }
+    &__location-northaustralia{
+      right: 100px;
+      bottom: 126px;
+    }
+    &__location-korea{
+      right: 114px;
+      top: 192px;
+    }
+    &__location-sakhalin{
+      right: 34px;
+      top: 165px;
+    }
+    &__location-kamchatka{
+      right: 34px;
+      top: 110px;
+    }
+    &__location-yakutia{
+      right: 114px;
+      top: 110px;
+    }
+  }
+  .trusted{
+    padding-top: 30px;
+    &__items{flex-wrap: wrap;}
+    &__item{
+      max-width: calc(100% / 4 - 30px);
+      margin: 0 15px;
+      & + &{margin-left: 0;}
+    }
+  }
+  .services{
+    &__description{
+      display: none;
+    }
+    &__items{
+      margin-top: 30px;
+    }
+    &__item{
+      min-height: 253px;
+      &:hover .points{opacity: .7;}
+    }
+    &__item-info{display: none;}
+    &__item-picture{
+      margin-right: 30px;
+    }
+    &__item-name{
+      margin-left: 0;
+      font-size: 24px;
+      line-height: 38px;
+    }
+    &__item-link--768{
+      display: inline-block;
+      color: #fff;
+      font-size: 12px;
+      padding-right: 20px;
+      &::after{
+        top: 5px;
+        width: 10px;
+        height: 7px;
+        background-size: contain;
+        background-image: url(../../img/svg/icons/right-arrow-white.svg);
+      }
+    }
+    &__item--blue{
+      .points{
+        right: -43px;
+        top: -24px;
+      }
+    }
+    &__item--orange{
+      .points{
+        left: -51px;
+        bottom: 0;
+      }
+    }
+    &__item--purple{
+      .points{
+        left: 86px;
+        bottom: -55px;
+      }
+    }
+    &__item--aqua{
+      .points{
+        right: -64px;
+        bottom: -12px;
+      }
+    }
+    &__item--pink{
+      .points{
+        right: -120px;
+        top: -30px;
+      }
+    }
+    &__item--lightgreen{
+      .points{
+        left: -75px;
+        bottom: -45px;
+      }
+    }
+  }
+  .wwu{
+    &__description{
+      height: 155px;
+    }
+    &__text{
+      font-size: 15px;
+      line-height: 29px;
+      margin: 0;
+      margin-left: 5px;
+    }
+    &__picture{
+      &--left{max-width: 102px;}
+      &--right{max-width: 120px;}
+    }
+    .points{
+      &--right{
+        top: 10px;
+        right: -140px;
+      }
+      &--left{
+        left: -40px;
+        top: -60px;
+      }
+    }
+  }
+  .industries{
+    padding-top: 80px;
+    .tab-link{
+      font-size: 14px;
+      line-height: 25px;
+      &__wrapper{
+        @include flex(43px);
+        &--slider{display: none;}
+      }
+      &.active{
+        font-size: 14px;
+        line-height: 25px;
+        &::before{
+          width: 83px;
+          height: 2px;
+        }
+      }
+    }
+    .tab-content{
+      padding-top: 160px;
+      &__inner{
+        padding: 0 20px 20px;
+        min-height: 280px;
+      }
+      &__title{
+        font-size: 24px;
+        line-height: 43px;
+      }
+      &__description{
+        font-size: 13px;
+        line-height: 25px;
+        margin-bottom: 20px;
+      }
+      &__link{
+        padding: 14px 50px;
+      }
+    }
+    .fintech-title,
+    .insurtech-title,
+    .sass-title,
+    .healthtech-title,
+    .startups-title{
+      &::before{
+        width: 196px;
+        height: 196px;
+      }
+    }
+    .fintech-title::before {
+      bottom: -23px;
+    }
+    .insurtech-title::before {
+      bottom: -23px;
+    }
+    .sass-title::before {
+      bottom: -43px;
+    }
+    .healthtech-title::before {
+      bottom: -28px;
+    }
+    .startups-title::before {
+      bottom: -23px;
+    }
+  }
+  .reviews{
+    padding-top: 40px;
+    padding-bottom: 188px;
+    .slider-reviews{
+      margin-bottom: 0;
+      &__item{
+        @include flex(305px)
+      }
+      &__logo{
+        max-width: 250px;
+        justify-content: center;
+        padding-right: 0;
+        img{
+          max-width: 150px;
+        }
+      }
+      &__info{
+        width: auto;
+        padding-top: 30px;
+        padding-left: 17px;
+        padding-right: 20px;
+      }
+      &__position{
+        font-size: 14px;
+        line-height: 25px;
+        span{
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+      .rating{
+        &-wrapper{
+          max-width: 94px;
+        }
+        height: 14px;
+        background: url(../../img/svg/icons/two-stars-768.svg);
+        &-number{
+          font-size: 14px;
+          line-height: 25px;
+          margin-right: 16px;
+        }
+        li.current{
+          background: url(../../img/svg/icons/two-stars-768.svg) left bottom;
+        }
+        [class*="star"]{
+          width: 14px;
+          height: 14px;
+        } 
+        [class*="star"]:hover{
+          background: url(../../img/svg/icons/two-stars-768.svg) left bottom;
+        }
+        .star-1:hover{width: 14px;}
+        .star-2{left: 14px;}
+        .star-2:hover{width: 28px;}
+        .star-3{left: 28px;}
+        .star-3:hover{width: 42px;}
+        .star-4{left: 42px;}
+        .star-4:hover{width: 56px;}
+        .star-5{left: 56px;}
+        .star-5:hover{width: 70px;}
+      }
+      &__image{
+        max-width: 63px;
+      }
+      &__value{
+        margin-bottom: 15px;
+      }
+      &__link{
+        font-size: 12px;
+        line-height: 15px;
+        padding-right: 20px;
+        &::after{
+          width: 10px;
+          height: 7px;
+          top: 2px;
+        }
+      }
+      &__text{
+        font-size: 14px;
+        line-height: 25px;
+        &::before{
+          width: 40px;
+          height: 28px;
+          left: 0;
+          top: -5px;
+        }
+      }
+    }
+    .slick-next,
+    .slick-prev{
+      top: auto;
+      bottom: 10px;
+      font-size: 12px;
+      line-height: 15px;
+      &::before{
+        width: 10px;
+        height: 7px;
+        top: 7px;
+        background-size: contain;
+      }
+    }
+    .slick-next{
+      right: 280px;
+      left: auto;
+      width: 53px;
+    }
+    .slick-prev{
+      left: 290px;
+      right: auto;
+      width: 82px;
+    }
+    .slick-dots{
+      @include flex(94px);
+      bottom: -94px;
+      li{
+        &:nth-child(1)::after{
+          top: calc((94px - 24px) / 2);
+          width: 80px;
+          height: 24px;
+        }
+        &:nth-child(2)::after{
+          top: calc((94px - 54px) / 2);
+          width: 96px;
+          height: 54px;
+        }
+        &:nth-child(3)::after{
+          top: calc((94px - 26px) / 2);
+          width: 140px;
+          height: 26px;
+        }
+        &:nth-child(4)::after{
+          top: calc((94px - 36px) / 2);
+          width: 128px;
+          height: 36px;
+        }
+        &:nth-child(5)::after{
+          top: calc((94px - 36px) / 2);
+          width: 91px;
+          height: 36px;
+        }
+        &:nth-child(6)::after{
+          top: calc((94px - 53px) / 2);
+          width: 125px;
+          height: 53px;
+        }
+        &:nth-child(7)::after{
+          top: calc((94px - 31px) / 2);
+          width: 90px;
+          height: 31px;
+        }
+        &:nth-child(8)::after{
+          width: 122px;
+          top: calc((94px - 25px) / 2);
+          height: 25px;
+        }
+      }
+    }
+  }
+  .story{
+    padding-top: 80px;
+    &__inner{
+      position: relative;
+      justify-content: space-between;
+      // width: 100%;  
+    }      
+    &__description{
+      max-width: auto;
+      width: auto;
+      .points{
+        &--aqua{
+          right: 30px;
+          top: -50px;
+          left: auto;
+        }
+      }
+    }
+    &__description-link{
+      padding-right: 20px;
+    }
+    &__description-link::after{
+      width: 10px;
+      height: 7px;
+      top: 2px;
+    }
+    &__text{
+      font-size: 13px;
+      line-height: 25px;
+    }
+    &__slider{
+      position: absolute;
+      right: 0;
+    }
+    &__slider-inner{
+      height: 230px;
+    }
+    &__slider-image{
+      height: 100%;
+      img{
+        height: 100%;
+        width: auto;
+      }
+      &--mac{
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    &__numbers{
+      margin-left: 12px;
+      max-width: 363px;
+      width: 100%;
+      // width: auto;
+      padding-left: 0;
+      padding-top: 215px;
+    }
+    &__item-number{
+      font-size: 64px;
+      line-height: 96px;
+    }
+    &__link{
+      padding: 14px 22px;
+      font-size: 15px;
+    }
+  }
+  .faq{
+    &__inner{
+      flex-wrap: wrap;
+      height: auto;
+      min-height: 1043px;
+      padding-bottom: 0;
+    }
+    &__accordion{
+      width: 100%;
+      max-width: 1280px;
+    }
+    .accordion{
+      &__title{
+        text-align: center;
+      }
+    }
+    .faq-form{
+      @include width(500px);
+      &__wrapper{
+        max-width: 1280px;
+        width: 100%;
+        text-align: center;
+        min-height: 730px;
+      }  
+      &__title{
+        font-size: 36px;
+        line-height: 54px;
+      }
+      &__subtitle{
+        font-size: 14px;
+        line-height: 25px;
+      }
+      &__button{
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+  .about{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .points{
+      &--pink{
+        bottom: 0;
+        left: -50px;
+        transform: rotate(90deg);
+      }
+      &--blue{
+        top: 0;
+        right: -50px;
+        transform: rotate(90deg);
+      }
+    }
+    &__text{
+      max-width: 600px;
+      font-size: 14px;
+      line-height: 25px;
+      margin-bottom: 29px;
+    }
+    &__items{
+      height: 123px;
+      margin-bottom: 30px;
+    }
+    &__item{
+      width: 33%;
+      min-height: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+    }
+    &__item-picture{
+      max-width: 160px;
+      min-height: 100%;
+      margin-bottom: 20px;
+    }
+    &__item:nth-child(1) .about__item-picture {
+      height: 26px;
+      img{
+        width: auto;
+        height: 100%;
+      }
+    }
+    &__item:nth-child(2) .about__item-picture{
+      height: 57px;
+      img{
+        width: auto;
+        height: 100%;
+      }
+    }
+    &__item:nth-child(3) .about__item-picture{
+      height: 54px;
+      img{
+        width: auto;
+        height: 100%;
+      }
+    }
+    &__item-text{
+      font-size: 14px;
+      line-height: 25px;
+      padding-top: 20px;
+    }
+    &__link{
+      margin-top: 10px;
+      padding: 14px 17px;
+      font-size: 15px;
+    }
+  }
+  .news{
+    padding-top: 80px;
+    &__description{
+      display: none;
+    }
+    &__item-wrapper{
+      @include wrap-item(calc(50% - 10px), 253px);
+      margin-bottom: 20px;
+    }
+    &__item-blog,
+    &__item-news{
+      &::before{
+        font-size: 10px;
+        line-height: 25px;
+        width: 65px;
+        height: 25px;
+        clip-path: polygon(0px 0px, 65px 0px, 55px 25px, 0px 25px);
+      }
+    }
+    &__date{
+      margin-right: 33px;
+      &::after{
+        width: 1px;
+        height: 12px;
+        right: -16px;
+        top: 5px;
+      }
+    }
+    &__date-wrapper{
+      font-size: 12px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
+    &__title{
+      font-size: 14px;
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
+    &__tags{
+      font-size: 12px;
+      line-height: 22px;
+    }
+    &__tag{
+      & + &{margin-left: 20px;}
+    }
+    &__item-1 .points{
+      bottom: -50px;
+      right: -50px;
+    }
+    &__item-2 .points{
+      bottom: -70px;
+      left: -50px;
+    }
+    &__item-3 .points{
+      right: -70px;
+    }
+    &__item-4 .points{
+      transform: rotate(90deg);
+      right: -30px;
+    }
+  }
+  .footer{
+    padding-bottom: 15px;
+    padding-top: 50px;
+    &__inner{
+      margin-bottom: 50px;
+    }
+    &__logo{
+      max-width: 94px;
+    }
+    &__link{
+      font-size: 14px;
+      line-height: 25px;
+    }
+    &__menu{margin-bottom: 95px;}
+    &__menu-list{
+      height: 170px;
+    }
+    &__menu-item{
+      font-size: 14px;
+      line-height: 25px;
+      &:nth-child(4n){margin-right: 0;}
+    }
+    &__link-list{
+      margin-bottom: 45px;
+    }
+    &__link {
+      padding-left: 16px;
+      &--map,
+      &--phone,
+      &--whatsapp,
+      &--skype,
+      &--facebook{
+        &::before{
+          top: 7px;
+          width: 10px;
+          height: 10px;
+          background-image: url(../../img/svg/icons/sprite-footer-links-768.svg);
+        }
+        &:hover::before{
+          background-position-x: -15px;
+        }
+      }
+      
+      &--map::before{background-position: 0 0;}
+      &--phone::before{background-position: 0 -15px;}
+      &--whatsapp::before{background-position: 0 -30px;}
+      &--skype::before{background-position: 0 -45px;}
+      &--facebook::before{background-position: 0 -60px;}
+    }
+    &__social-item{
+      margin-right: 18px;
+    }
+    &__image{
+      max-width: 20px;
+    }
+    &__form{
+      .form-trigger{
+        height: 48px;
+      }
+      .form-focus{
+        font-size: 12px;
+      }
+      .bg-link{
+        padding: 14px 12px;
+      }
+    }
+    &__copy{
+      font-size: 10px;
+    }
+  }
+} 
+@media(max-width: 768px){ // 480-768    ширину в браузере выставлять на минимальное значение +1 пиксель
+  
+}  
+@media(max-width: 480px){ // 375-480    ширину в браузере выставлять на минимальное значение +1 пиксель бесполезная ширина 480, т.к. это горизонтальная ориентация iphone4. делать адаптив для 375 и 768
+  .section-title{
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .container{
+    padding: 0;
+  }
+  .header{
+    &__inner{
+      // @include flex(56px);
+      min-height: 56px;
+    }
+  }
+  .intro{
+    &--1920{
+      display: none;
+    }
+    &--375{
+      display: block;
+    }
+    // padding-top: 0;
+    &__inner{
+      padding-top: 10px;
+      background: none;
+    }
+    &__title{
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__subtitle{
+      display: none;
+    }
+    // &__item{
+    //   width: 14px;
+    //   height: 14px;
+    // }
+    // &__location{
+    //   height: 302px;
+    // }
+    &__description{
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 42px;
+      // height: calc(100vh - 125px);
+      height: 540px;
+      padding-right: 30px;
+      &--left,
+      &--right{
+        transform: translate(-50%, -1000px);
+        &.active{transform: translate(-50%, -55px);}
+      }
+      &-cross::after,
+      &-cross::before{
+        height: 1px;
+        top: 15px;
+        right: 15px;
+      }
+      &-status--aqua,
+      &-status--blue{
+        align-items: center;
+      }
+      &-info{
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4){
+          display: flex;
+          margin-right: 0;
+        }
+        display: flex;
+        margin-bottom: 10px;
+        // align-items: center;
+        span{
+          display: block;
+          max-width: 150px;
+        }
+      }
+      &-link--blue,
+      &-link--aqua{
+        margin-top: 30px;
+      }
+    }
+    // &__description-title--aqua,
+    // &__description-title--blue{
+    //   font-size: 16px;
+    //   line-height: 29px;
+    // }
+    // &__description-info{
+    //   margin-bottom: 5px;
+    // }
+    &__location-australia{
+      bottom: 85px;
+      right: 70px;
+    }
+    &__location-china{
+      bottom: 250px;
+      right: 162px;
+    }
+    &__location-siberia{
+      top: 100px;
+      right: 188px;
+    }
+    &__location-volga{
+      top: 120px;
+      right: 232px;
+    }
+    &__location-iran{
+      bottom: auto;
+      right: auto;
+      left: 30px;
+      top: 180px;
+    }
+    &__location-litva{
+      top: 110px;
+      right: 110px;
+    }
+    &__location-poland{
+      top: 140px;
+      right: 120px;
+    }
+    &__location-africa{
+      bottom: 180px;
+      right: 90px;
+    }
+    &__location-columbia{
+      bottom: 155px;
+      left: 205px;
+    }
+    &__location-alaska{
+      top: 80px;
+      left: 20px;
+    }
+    &__location-canada{
+      top: 120px;
+      left: 115px;
+    }
+    &__location-southalaska{
+      top: 90px;
+      left: 76px;
+    }
+    &__location-usa{
+      top: 164px;
+      left: 155px;
+    }
+    &__location-brasil{
+      bottom: 120px;
+      left: 264px;
+    }
+    &__location-argentina{
+      bottom: 77px;
+      left: 240px;
+    }
+    &__location-southafrica{
+      bottom: 65px;
+      right: 110px;
+    }
+    &__location-niger{
+      bottom: 200px;
+      left: 120px;
+    }
+    &__location-uk{
+      left: 130px;
+      top: 120px;
+    }
+    &__location-egipt{
+      right: 120px;
+      bottom: 230px;
+    }
+    &__location-kz{
+      right: 30px;
+      top: 186px;
+    }
+    &__location-northaustralia{
+      right: 100px;
+      bottom: 110px;
+    }
+    &__location-korea{
+      right: 114px;
+      top: 160px;
+    }
+    &__location-sakhalin{
+      right: 34px;
+      top: 120px;
+    }
+    &__location-kamchatka{
+      right: 34px;
+      top: 70px;
+    }
+    &__location-yakutia{
+      right: 114px;
+      top: 80px;
+    }
+  }
+  .trusted{
+    &--static{display: none;}
+    &--slider{display: block;}
+    &__title{
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+  .services{
+    &__item{
+      @include wrap-item(100%, 216px);
+      padding: 0 30px;
+    }
+    &__item-name{
+      font-size: 22px;
+      line-height: 35px;
+    }
+  }
+  .wwu{
+    &__description{
+      flex-wrap: wrap;
+      height: auto;
+      padding: 0 6px;
+    }
+    &__picture{
+      &--left{
+        max-width: 199px; 
+        margin: 0 auto 30px;
+      }
+      &--right{
+        max-width: 224px; 
+        margin: 30px auto 0;
+      }
+    }
+    &__text{
+      margin: 0;
+    }
+  }
+  .industries{
+    .tab-link{
+      &__wrapper{
+        &--slider{
+          display: flex;
+          .tab-link{
+            font-size: 14px;
+            line-height: 25px;
+            width: auto;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            height: 60px;
+          }
+        }
+        &--static{display: none;}
+      }
+    }
+  }
+  .reviews{
+    .slider-reviews{
+      &__item{
+        flex-wrap: wrap;
+      }
+      &__logo{
+        width: 100%;
+      }
+    }
+  }
+}  
+@media(max-width: 375px){ // 320-375    ширину в браузере выставлять на минимальное значение +1 пиксель
+
+}  

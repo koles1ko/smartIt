@@ -1,4 +1,52 @@
 footer.footer
-  .container
-    .footer__inner 
-      p это подвал
+  +points('pink')
+  +points('blue')
+  .footer__large
+    a.footer__logo(href="index.html")
+      img(src="img/svg/header-logo.svg", alt="logotype")
+    .footer__inner
+      .footer__connetcion
+        ul.footer__link-list
+          li 
+            a.footer__link.footer__link--map(href="#") 1884 Market St, San Francisco 94102
+          li 
+            a.footer__link.footer__link--phone(href="tel:4086413300") 408 641 3300
+          li 
+            a.footer__link.footer__link--whatsapp(href="#") +375 44 567 88 99
+          li 
+            a.footer__link.footer__link--skype(href="#") smart_it
+          li 
+            a.footer__link.footer__link--facebook(href="#") +375 44 567 88 99
+        .footer__social
+          a.footer__social-item.footer__social--facebook(href="#")
+            +svg('footer', 'facebook')
+          a.footer__social-item.footer__social--twitter(href="#")
+            +svg('footer', 'twitter')
+          a.footer__social-item.footer__social--linkedin(href="#")  
+            +svg('footer', 'linkedin')
+      .footer__navigation 
+        nav.footer__menu
+          ul.footer__menu-list  
+            li.footer__menu-item  
+              a(href="#") Cases
+            li.footer__menu-item  
+              a(href="#") Services
+            li.footer__menu-item  
+              a(href="#") Industries
+            li.footer__menu-item  
+              a(href="#") About us
+            li.footer__menu-item  
+              a(href="#") Blog
+            li.footer__menu-item  
+              a(href="#") News
+            li.footer__menu-item  
+              a(href="#") Contact us
+        .footer__form-wrapper
+          form.footer__form   
+            input.form-trigger#email(type="text")
+            label.form-focus(for="#email") Enter email
+            button.bg-link.bg-link--blue(type="submit") Receive updates
+  .footer__copy
+    div Copyright 2020 Smart IT. All Rights Reserved
+    a.terms-of-use(href="#") Terms of use      
+    a.privacy-policy(href="#") Privacy policy   

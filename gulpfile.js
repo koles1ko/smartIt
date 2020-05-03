@@ -213,7 +213,7 @@ function svg() {
 function watch() {
   browserSync.init({
     server: {
-      baseDir: path.baseDir
+      baseDir: path.baseDir,
     }
     // tunnel: true
   });

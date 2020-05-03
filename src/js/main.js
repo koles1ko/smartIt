@@ -3,18 +3,38 @@ console.log(divide(34, 2));
 
 $(function () {
 
-  $('.intro__location .intro__item').on('click', function(event) {
+  $('.intro-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    infinite: false,
+  });
+
+  $('.intro__item').on('click', function(event) {
   var id = $(this).attr('data-id');
     $('#'+id).toggleClass('active');
+    $('#'+id+'-375').toggleClass('active');
     $(this).toggleClass('current');
     return false;
   }); 
   
-  $('.intro__location .intro__description-cross').on('click', function(event) {
+  $('.intro__description-cross').on('click', function(event) {
     $('.intro__description').removeClass('active');
     $('.intro__item').removeClass('current');
     return false;
   }); 
+
+  $('.trusted--slider .trusted__items').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    centerMode: true,
+  });
 
   $('.industries__tabs .js-trigger').click(function() {
     var id = $(this).attr('data-tab'),
@@ -25,6 +45,17 @@ $(function () {
     
     $('.js-content.active-tab').removeClass('active-tab'); // 3
     content.addClass('active-tab'); // 4
+  });
+
+  $('.tab-link__wrapper--slider ').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    // infinite: false,
+    variableWidth: true,
+    centerMode: true,
+    focusOnSelect: true,
   });
 
   $('.slider-reviews').slick({
