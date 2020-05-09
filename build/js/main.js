@@ -67,6 +67,19 @@ $(function () {
     slidesToScroll: 1,
     arrows: true,
     dots: true,
+    responsive:[
+      {
+        breakpoint: 481,
+        settings:{
+          slidesToShow: 3,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          variableWidth: true,
+          centerMode: true,
+        }
+      }
+    ]
   });
 
   $('.story__slider').slick({

@@ -338,6 +338,9 @@
       background-position-y: 45px;
       min-height: 520px;
       padding-top: 30px;
+      max-width: 768px;
+      width: 100%;
+      margin: 0 auto;
     }
     &__title{
       font-size: 36px;
@@ -721,6 +724,7 @@
       &__text{
         font-size: 14px;
         line-height: 25px;
+        max-width: 100%;
         &::before{
           width: 40px;
           height: 28px;
@@ -1106,12 +1110,161 @@
   }
 } 
 @media(max-width: 768px){ // 480-768    ширину в браузере выставлять на минимальное значение +1 пиксель
+  .intro{
+    // padding-top: 0;
+    &__inner{
+      // background-position-y: 45px;
+      min-height: 350px;
+      padding-top: 0;
+      max-width: 480px;
+      // width: 100%;
+      // margin: 0 auto;
+    }
+    // &__title{
+    //   font-size: 36px;
+    //   line-height: 54px;
+    // }
+    &__subtitle{
+      display: none;
+    }
+    // &__item{
+    //   width: 14px;
+    //   height: 14px;
+    // }
+    // &__location{
+    //   height: 302px;
+    // }
+    &__description{
+      width: 480px;
+      // font-size: 12px;
+      // line-height: 22px;
+      &--left,
+      &--right{
+        transform: translate(-50%, -1000px);
+        &.active{transform: translate(-50%, -110px);}
+      }
+    }
+    // &__description-title--aqua,
+    // &__description-title--blue{
+    //   font-size: 16px;
+    //   line-height: 29px;
+    // }
+    // &__description-info{
+    //   margin-bottom: 5px;
+    // }
+    &__location-australia{
+      bottom: 65px;
+      right: 40px;
+    }
+    &__location-china{
+      bottom: 170px;
+      right: 100px;
+    }
+    &__location-siberia{
+      top: 110px;
+      right: 120px;
+    }
+    &__location-volga{
+      top: 125px;
+      right: 150px;
+    }
+    &__location-iran{
+      top: auto;
+      bottom: 170px;
+      right: 170px;
+    }
+    &__location-litva{
+      top: 110px;
+      right: 200px;
+    }
+    &__location-poland{
+      top: 130px;
+      right: 220px;
+    }
+    &__location-africa{
+      bottom: 130px;
+      right: 210px;
+    }
+    &__location-columbia{
+      bottom: 120px;
+      left: 120px;
+    }
+    &__location-alaska{
+      top: 90px;
+      left: 10px;
+    }
+    &__location-canada{
+      top: 120px;
+      left: 70px;
+    }
+    &__location-southalaska{
+      top: 100px;
+      left: 40px;
+    }
+    &__location-usa{
+      top: 145px;
+      left: 90px;
+    }
+    &__location-brasil{
+      bottom: 100px;
+      left: 150px;
+    }
+    &__location-argentina{
+      bottom: 65px;
+      left: 140px;
+    }
+    &__location-southafrica{
+      bottom: 80px;
+      right: 210px;
+    }
+    &__location-niger{
+      bottom: 150px;
+      left: 210px;
+    }
+    &__location-uk{
+      left: 220px;
+      top: 120px;
+    }
+    &__location-egipt{
+      right: 210px;
+      bottom: 170px;
+    }
+    &__location-kz{
+      right: 180px;
+      top: 130px;
+    }
+    &__location-northaustralia{
+      right: 60px;
+      bottom: 90px;
+    }
+    &__location-korea{
+      right: 60px;
+      top: 130px;
+    }
+    &__location-sakhalin{
+      right: 15px;
+      top: 110px;
+    }
+    &__location-kamchatka{
+      right: 34px;
+      top: 90px;
+    }
+    &__location-yakutia{
+      right: 90px;
+      top: 90px;
+    }
+  }
   
 }  
 @media(max-width: 480px){ // 375-480    ширину в браузере выставлять на минимальное значение +1 пиксель бесполезная ширина 480, т.к. это горизонтальная ориентация iphone4. делать адаптив для 375 и 768
   .section-title{
     font-size: 32px;
     line-height: 38px;
+    font-weight: 200;
+  }
+  .section-description{
+    font-size: 16px;
+    line-height: 29px;
   }
   .container{
     padding: 0;
@@ -1129,7 +1282,6 @@
     &--375{
       display: block;
     }
-    // padding-top: 0;
     &__inner{
       padding-top: 10px;
       background: none;
@@ -1141,18 +1293,10 @@
     &__subtitle{
       display: none;
     }
-    // &__item{
-    //   width: 14px;
-    //   height: 14px;
-    // }
-    // &__location{
-    //   height: 302px;
-    // }
     &__description{
       width: 100%;
       margin: 0 auto;
       padding-top: 42px;
-      // height: calc(100vh - 125px);
       height: 540px;
       padding-right: 30px;
       &--left,
@@ -1352,6 +1496,10 @@
             display: flex;
             align-items: center;
             height: 60px;
+            // background-color: #fff;
+          }
+          .slick-slide:focus{ 
+            outline: none;
           }
         }
         &--static{display: none;}
@@ -1359,16 +1507,241 @@
     }
   }
   .reviews{
+    background-color: $grey-bg;
+    padding-bottom: 40px;
+    &__description{
+      padding: 0 10px;
+    }
     .slider-reviews{
       &__item{
         flex-wrap: wrap;
+        max-width: 290px;
+        margin: 0 auto;
+        min-height: 610px;
       }
       &__logo{
+        max-width: 100%;
         width: 100%;
+        height: 105px;
       }
       &__info{
+        background-color: #fff;
         width: 100%;
+        position: relative;
+        height: 500px;
+        padding-bottom: 20px;
       }
+      &__position,
+      &__position span,
+      &__text{
+        font-size: 16px;
+        line-height: 29px;
+      }
+      &__link{
+        position: absolute;
+        bottom: 20px;
+        font-size: 16px;
+        line-height: 20px;
+        padding-right: 34px;
+        margin: 0;
+        &::after{
+          top: 0;
+          width: 24px;
+          height: 16px;
+        }
+      }
+    }
+    .slick-dots{
+      max-width: 94px;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+      li{
+        width: 3px;
+        height: 3px;
+        background-color: #ccc;
+        transition: .3s;
+        & + li{
+          margin-left: 10px;
+        }
+        &::after{
+          background: none;
+          display: none;
+        }
+        &.slick-active{
+          background-color: #000;
+        }
+      }
+    }
+    .slick-slide{
+      width: 270px !important;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  .story{
+    &__inner{
+      flex-wrap: wrap;
+      position: relative;
+    }
+    &__title{
+      max-width: 262px;
+    }
+    &__description{
+      max-width: 100%;
+      width: 100%;
+      padding: 60px 15px 30px;
+      min-height: 500px;
+      .points{
+        left: -40px;
+        top: -50px;
+      }
+    }
+    &__description-link{
+      position: absolute;
+      bottom: 10px;
+    }
+    &__text{
+      font-size: 16px;
+      line-height: 29px;
+    }
+    &__slider{
+      position: relative;
+      margin: 0 auto;
+    }
+    &__numbers{
+      padding-top: 0;
+    }
+    &__items{
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    &__item{
+      width: 100%;
+      padding: 0 50px;
+      &:nth-child(1){
+        order: 0;
+        .story__item-text{padding-left: 0;}
+      } 
+      &:nth-child(2){
+        order: 2;
+        & .story__item-text{max-width: 100%;}
+      }
+      &:nth-child(3){
+        order: 1;
+        & .story__item-text{max-width: 100%;}
+      }
+      &:nth-child(4){
+        order: 3;
+      }
+    }
+    &__item-text{
+      max-width: 100%;
+    }
+  }
+  .faq{
+    &__inner{
+      margin-top: 30px;
+    }
+    .accordion{
+      &__item{
+        padding-left: 30px;
+        padding-right: 10px;
+      }
+      &__title{
+        text-align: left;
+        font-size: 16px;
+        line-height: 29px;
+        height: 110px;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .faq-form{
+      &__wrapper{
+        padding: 30px 0;
+        min-height: 610px;
+      }
+      &__check-wrapper{
+        flex-wrap: wrap;
+      }
+      &__title{
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 200;
+      }
+      &__check{
+        width: 50%;
+        text-align: left;
+        padding-left: 25px;
+        margin-bottom: 25px;
+        label{
+          font-size: 16px;
+        }
+        & + .faq-form__check{margin-left: 0;}
+      }
+      &__data{
+        width: calc(100% - 10px);
+        margin: 0 auto 30px;
+        .form-trigger{
+          width: 100%;          
+        }
+      }
+      &__button{
+        padding: 14px 42px;
+      }
+    }
+  }
+  .about{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    .points--blue{
+      transform: rotate(0);
+    }
+    .points--pink{display: none;}
+    &__text{
+      margin-top: 10px;
+      font-size: 14px;
+      padding: 0 15px;
+    }
+    &__items{
+      flex-wrap: wrap;
+      height: auto;
+    }
+    &__item{
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+  .news{
+    background-color: #fff;
+    padding-top: 30px;
+    &__items{
+      margin-top: 30px;
+      padding: 0 10px;
+    }
+    &__item-wrapper{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .footer{
+    &__logo{display: none;}
+    &__inner{
+      display: none;
+    }
+    &__copy{
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      div{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      a{
+        margin: 0;
+      }
+      a + a{margin-left: 20px;}
     }
   }
 }  

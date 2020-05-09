@@ -75,7 +75,7 @@
     max-width: 1657px;
     width: 100%;
     margin: 0 auto;
-    background-image: url(../img/raster/intro-world.png);
+    background-image: url(../img/raster/intro-world.webp);
     background-position: center bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -323,9 +323,9 @@
       min-height: 450px;
       overflow: visible;
       overflow-x: hidden;
-      &--left{background: url(../img/raster/intro-world.png) left center no-repeat}
-      &--center{background: url(../img/raster/intro-world.png) center center no-repeat}
-      &--right{background: url(../img/raster/intro-world.png) right center no-repeat}
+      &--left{background: url(../img/raster/intro-world.webp) left center no-repeat}
+      &--center{background: url(../img/raster/intro-world.webp) center center no-repeat}
+      &--right{background: url(../img/raster/intro-world.webp) right center no-repeat}
       &--left,
       &--center,
       &--right{background-size: cover; position: relative;}
@@ -571,6 +571,7 @@
   &__item-static{
     color: #fff;
     text-align: center;
+    min-height: 636px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -669,6 +670,7 @@
     justify-content: center;
     text-align: center;
     transition: .4s;
+    background-color: #fff;
     &:hover{
       cursor: pointer;
     }
@@ -698,6 +700,7 @@
     text-align: center;
     display: none;
     padding-top: 200px;
+    background-color: #fff;
     &.active-tab{display: block;}
     &__inner{
       min-height: 525px;
@@ -723,6 +726,7 @@
   .healthtech-title,
   .startups-title{
     position: relative;
+    z-index: 2;
     &::before{
       position: absolute;
       content: '';
@@ -735,6 +739,7 @@
       background-position: center;
       width: 265px;
       height: 265px;
+      
     }
   }
   .fintech-title::before {
@@ -933,56 +938,56 @@
         top: calc((155px - 65px) / 2);
         width: 221px;
         height: 65px;
-        background: url(../img/raster/partners/hubspot.png) center center no-repeat; 
+        background: url(../img/raster/partners/hubspot.webp) center center no-repeat; 
         background-size: contain;
       }
       &:nth-child(2)::after{
         top: calc((155px - 150px) / 2);
         width: 265px;
         height: 150px;
-        background: url(../img/raster/partners/vtb.png) center center no-repeat; 
+        background: url(../img/raster/partners/vtb.webp) center center no-repeat; 
         background-size: contain;
       }
       &:nth-child(3)::after{
         top: calc((155px - 72px) / 2);
         width: 386px;
         height: 72px;
-        background: url(../img/raster/partners/classictic.png) center center no-repeat; 
+        background: url(../img/raster/partners/classictic.webp) center center no-repeat; 
         background-size: contain;
       }
       &:nth-child(4)::after{
         top: calc((155px - 98px) / 2);
         width: 353px;
         height: 98px;
-        background: url(../img/raster/partners/personaly.png) center center no-repeat; 
+        background: url(../img/raster/partners/personaly.webp) center center no-repeat; 
         background-size: contain;
       }
       &:nth-child(5)::after{
         top: calc((155px - 99px) / 2);
         width: 251px;
         height: 99px;
-        background: url(../img/raster/partners/wowwee.png) center center no-repeat; 
+        background: url(../img/raster/partners/wowwee.webp) center center no-repeat; 
         background-size: contain;
       }
       &:nth-child(6)::after{
         top: calc((155px - 147px) / 2);
         width: 347px;
         height: 147px;
-        background: url(../img/raster/partners/mdberry.png) center center no-repeat; 
+        background: url(../img/raster/partners/mdberry.webp) center center no-repeat; 
         background-size: contain;
       }
       &:nth-child(7)::after{
         top: calc((155px - 87px) / 2);
         width: 249px;
         height: 87px;
-        background: url(../img/raster/partners/thinfactory.png) center center no-repeat; 
+        background: url(../img/raster/partners/thinfactory.webp) center center no-repeat; 
         background-size: contain;
       }
       &:nth-child(8)::after{
         top: calc((155px - 71px) / 2);
         width: 338px;
         height: 71px;
-        background: url(../img/raster/partners/trusted.png) center center no-repeat; 
+        background: url(../img/raster/partners/trusted.webp) center center no-repeat; 
         background-size: contain;
       }
     }
@@ -1100,14 +1105,6 @@
     align-items: center;
     height: 615px;
   }
-  // &__slider-image{
-  //   &--mac{
-  //     img{
-  //       width: 100%;
-  //       height: auto;
-  //     }  
-  //   }
-  // }
 
   &__numbers {
     max-width: 494px;
@@ -1172,7 +1169,6 @@
       position: relative;
       padding-left: 200px;
       transition: all .2s linear;
-      // background-color: #fff;
       z-index: 4;
       transform: translateY(0);
       overflow: hidden;
@@ -1209,7 +1205,6 @@
         &.active-wrap{transform: translateY(-777px);}
       }
     }
-  
     &__title {
       padding: 39px 80px 39px 33px;
       @include font(18px, 200, #000, 32px);
@@ -1238,7 +1233,6 @@
       flex-direction: column;
       padding-left: 33px;
     } 
-     
     &__text {
       flex: 1 0 auto;
       @include font(18px, 200, #000, 32px);
@@ -1324,7 +1318,6 @@
         }
       }
     }
-  
     &__data {
       position: relative;
       margin-bottom: 75px;
@@ -1335,7 +1328,6 @@
         padding-bottom: 11px;
       }
     }
-
     &__button{
       background-color: $pink;
       
