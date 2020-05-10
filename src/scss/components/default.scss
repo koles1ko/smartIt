@@ -278,6 +278,7 @@ body {
   bottom: 35px;
 }
 .burger-btn{
+  &:hover{cursor: pointer;}
   span{
     display: block;
     width: 30px;
@@ -287,6 +288,17 @@ body {
     background-color: #000;
     & + span{
       margin-top: 5px;
+    }
+  }
+  &.active{
+    span{
+      &:nth-child(1){
+        transform: rotate(-45deg);
+        position: relative;
+        top: 9px;
+      }
+      &:nth-child(2){transform: rotate(45deg);}
+      &:nth-child(3){display: none;}
     }
   }
 }

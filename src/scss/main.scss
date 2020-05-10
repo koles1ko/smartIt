@@ -14,6 +14,15 @@
   font-weight: 300;
   text-align: center;
   border-bottom: 1px solid $blue;
+  position: relative;
+  
+  margin-bottom: 64px;
+  &-rel{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    background-color: $grey-bg;
+  }
   &__inner {
     min-height: 143px;
     display: flex;
@@ -35,8 +44,9 @@
   &__btn{display: none;}
   &__menu-item {
     display: inline-block;
+    padding-right: 15px;
     & + & {
-      margin-left: 50px;
+      margin-left: 35px;
     }
   }
   &__menu-button {
@@ -54,7 +64,53 @@
   }
 
   &__dropdown {
-    display: none;
+    position: relative;
+    &:hover{cursor: pointer;}
+    &::after{
+      position: absolute;
+      content: '';
+      display: block;
+      top: 4px;
+      right: 0;
+      width: 10px;
+      height: 6px;
+      background-image: url(../img/svg/icons/chevron-down.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &.active::after{
+      transform: rotate(180deg);
+    }
+  }
+  &__dropdown-list{
+    &-1280{display: none;}
+    position: absolute;
+    left: 0;
+    bottom: -64px;
+    width: 100%;    
+    min-height: 64px;
+    z-index: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($blue, .1);  
+
+    transform: translateY(-65px);
+    transition: .2s;
+    &.active{
+      transform: translateY(0);
+    }
+    a{
+      font-weight: 300;
+      transition: .3s;
+      &:hover{
+        color: $blue
+      }
+    }
+
+    a + a{margin-left: 75px;}
   }
   &__work {
     font-weight: 700;
@@ -68,7 +124,6 @@
   &--375{
     display: none;
   }
-  padding-top: 50px;
   overflow-x: hidden;
   &__inner{
     position: relative;
@@ -1610,7 +1665,7 @@
   .points--blue{
     bottom: 17px;
     right: -10px;
-    z-index: 2;
+    z-index: 0;
   }
   &__large{
     @include width(1431px);

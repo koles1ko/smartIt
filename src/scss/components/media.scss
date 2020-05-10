@@ -9,9 +9,20 @@
   }
   .container{padding: 0 20px;}
   .header{
+    &__menu{
+      display: flex;
+      min-height: 143px;
+    }
     &__work{
       padding: 22px 40px 19px;
       margin-left: 72px;
+    }
+    
+    &__dropdown-list{
+      a{
+        font-size: 14px;
+      }
+      a + a{margin-left: 40px;}
     }
   }
   .intro{
@@ -329,7 +340,88 @@
   }
   .header{
     border-bottom: none;
-    &__menu{display: none;}
+    &__inner{
+      min-height: 86px;
+      z-index: 201;
+    }
+    &__logo{
+      max-width: 105px;
+    }
+    &__menu{
+      position: absolute;
+      display: flex;
+      justify-content: start;
+      align-items: baseline;
+      transform: translateX(1280px);
+      transition: 2s;
+      flex-direction: column;
+      bottom: auto;
+      top: 86px;
+      left: 0;
+      width: 100%;
+      min-height: 520px;
+      z-index: 200;
+      background-color: #fff;
+      text-align: left;
+      &-item{
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        background-color: #fff;
+        & + & {margin-left: 0;}
+      }
+      &.active{
+        transform: translateX(0);
+      }
+      &-list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      nav{
+        width: 100%;
+      }
+    }
+    &__dropdown{
+      &::after{
+        right: 20px;
+        top: 30px;
+      }
+    }
+    &__dropdown-list-1280{
+      position: relative;
+      transform: translateY(65px);
+      width: calc(100% + 40px);
+      min-height: 0;
+      height: 0;
+      overflow: hidden;
+      transform: translateY(0);
+      bottom: 0;
+      left: -20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      flex-direction: column;
+      padding: 0 20px;
+      &.active{
+        min-height: 94px;
+        margin-top: 10px;
+      }
+      a{
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        & + a{
+          margin-left: 0;
+        }
+      }
+    }
+    &__work{
+      margin-top: 25px;
+      margin-left: 20px;
+      padding: 15px 30px;
+    }
     &__btn{display: block;}
   }
   .intro{
@@ -1254,7 +1346,19 @@
       top: 90px;
     }
   }
-  
+  .header{
+    &__menu{
+      transform: translateX(768px);
+      min-height: 500px;
+    }
+    &__dropdown-list-1280{
+      justify-content: space-around;
+      &.active{min-height: 125px;}
+      a{
+        width: 50%;
+      }
+    }
+  }
 }  
 @media(max-width: 480px){ // 375-480    ширину в браузере выставлять на минимальное значение +1 пиксель бесполезная ширина 480, т.к. это горизонтальная ориентация iphone4. делать адаптив для 375 и 768
   .section-title{
@@ -1273,6 +1377,13 @@
     &__inner{
       // @include flex(56px);
       min-height: 56px;
+    }
+    &__dropdown-list-1280{
+      &.active{min-height: 165px;}
+      a{
+        margin-top: 11px;
+        margin-bottom: 11px;
+      }
     }
   }
   .intro{

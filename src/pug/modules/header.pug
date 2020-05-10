@@ -1,66 +1,78 @@
 block vars
 header.header
-  .container
-    .header__inner
-      a.header__logo(href="index.html")
-        img.header__logo-image(src="img/svg/header-logo.svg" alt="logotype")
-      .header__menu
-        nav
-          ul.header__menu-list
-            li.header__menu-item
-              a.header__menu-link(href="index.html") Сases
-            li.header__menu-item
-              a.header__menu-link.header__menu-button(href="#") Services
-              ul.header__dropdown
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-            li.header__menu-item
-              a.header__menu-link(href="#") Industries
-              ul.header__dropdown
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-            li.header__menu-item
-              a.header__menu-link(href="#") About Us
-              ul.header__dropdown
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-                li.header__dropdown-item
-                  a(href="#")
-            li.header__menu-item
-              a.header__menu-link(href="#") Blog
-            li.header__menu-item
-              a.header__menu-link(href="#") Contact us
-        a.header__work.bg-link(href="#") work with us
-      .header__btn.burger-btn
-        span
-        span
-        span  
+  .header__dropdown-list.header__dropdown-list-1920(data-list="services")
+    a(href="#") Product engineering
+    a(href="#") Project Rescue
+    a(href="#") POC Development
+    a(href="#") Software application development
+    a(href="#") Application integration
+    a(href="#") QA & Testing
+  //- .header__dropdown-list.header__dropdown-list-1920(data-list="industries")
+  //-   a(href="#") 1
+  //-   a(href="#") 2
+  //-   a(href="#") 3
+  //-   a(href="#") 4
+  //-   a(href="#") 5
+  //-   a(href="#") 6  
+  //- .header__dropdown-list.header__dropdown-list-1920(data-list="about")
+  //-   a(href="#") 1
+  //-   a(href="#") 2
+  //-   a(href="#") 3
+  //-   a(href="#") 4
+  //-   a(href="#") 5
+  //-   a(href="#") 6
+  .header-rel
+    .container
+      .header__inner
+        a.header__logo(href="index.html")
+          img.header__logo-image(src="img/svg/header-logo.svg" alt="logotype")
+        .header__menu
+          nav
+            ul.header__menu-list
+              li.header__menu-item
+                a.header__menu-link(href="index.html") Сases
+              li.header__menu-item.header__dropdown(data-list="services") Services
+                .header__dropdown-list.header__dropdown-list-1280(data-list="services")
+                  a(href="#") Product engineering
+                  a(href="#") Project Rescue
+                  a(href="#") POC Development
+                  a(href="#") Software application development
+                  a(href="#") Application integration
+                  a(href="#") QA & Testing
+              li.header__menu-item.header__dropdown(data-list="industries") Industries
+                //- li.header__dropdown-item
+                //-   a(href="#")
+                //- li.header__dropdown-item
+                //-   a(href="#")
+                //- li.header__dropdown-item
+                //-   a(href="#")
+                //- li.header__dropdown-item
+                //-   a(href="#")
+                //- li.header__dropdown-item
+                //-   a(href="#")
+                //- li.header__dropdown-item
+                //-   a(href="#")
+              li.header__menu-item.header__dropdown(data-list="about") About Us
+                //- li.header__dropdown-item
+                //-   a(href="#")
+                //- li.header__dropdown-item
+                //-   a(href="#")
+                //- li.header__dropdown-item
+                //-   a(href="#")
+                //- li.header__dropdown-item
+                //-   a(href="#")
+                //- li.header__dropdown-item
+                //-   a(href="#")
+                //- li.header__dropdown-item
+                //-   a(href="#")
+                
+              li.header__menu-item
+                a.header__menu-link(href="#") Blog
+              li.header__menu-item
+                a.header__menu-link(href="#") Contact us
+          a.header__work.bg-link(href="#") work with us
+        .header__btn.burger-btn
+          span
+          span
+          span  
 

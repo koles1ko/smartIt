@@ -1,40 +1,41 @@
 
 mixin list
-  ul
-    li foo
-    li bar
-    li baz
+   ul
+      li foo
+      li bar
+      li baz
 
 //- mixin dropdown  
 //-   ul.header__dropdown
 
 mixin test
-  div
-    ul
-      - for (var i=1; i<=5; i++) {
-        li= i + ". Hello"
-      - }
+   div
+      ul
+         - for (var i=1; i<=5; i++) {
+            li= i + ". Hello"
+         - }
 
 mixin points(name)
-  .points(class="points--" + name)
-    - for (var i=1; i<=x; i++) {
-      .points__item
-    - }
+   .points(class="points--" + name)
+      - for (var i=1; i<=x; i++) {
+         .points__item
+      - }
 
 mixin stars
-  .rating-wrapper
+   .rating-wrapper
     //- на span вешаем картинки на before
-    span.rating-number 5
-    ul.rating
-      li.current(style="width:20%"): span.star-1 
-      li: span.star-2
-      li: span.star-3
-      li: span.star-4
-      li: span.star-5
+      span.rating-number 5
+         ul.rating
+         li.current(style="width:20%"): span.star-1 
+         li: span.star-2
+         li: span.star-3
+         li: span.star-4
+         li: span.star-5
 
 
 //- добавление svg графики (blockName - имя блока в начале класса, nameID - имя иконки = имя ID)
 mixin svg(blockName, nameID)
-  - var href= "img/sprite.svg#"+nameID
-    svg(class=blockName + "__image")
-      use(xlink:href=href) 
+   - var href= "img/sprite.svg#"+nameID
+      svg(class=blockName + "__image")
+         use(xlink:href=href) 
+
