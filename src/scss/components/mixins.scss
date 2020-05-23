@@ -39,10 +39,9 @@
   align-items: center;
   height: $height;
 }
-@mixin font($size, $weight, $text-color: #000, $l-height: auto){
+@mixin font($size, $weight, $l-height: auto){
   font-size: $size;
   font-weight: $weight;
-  color: $text-color;
   line-height: $l-height;
 }
 @mixin wrap-item($width, $height){

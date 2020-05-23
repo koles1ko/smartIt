@@ -39,7 +39,8 @@
   height: 24px;
   background: url(../img/svg/icons/two-stars.svg);
   &-number{
-    @include font(24px, 500, #000, 24px);
+    color: black;
+    @include font(24px, 500,  24px);
     margin-right: 9px;
   }
   li.current{

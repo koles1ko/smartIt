@@ -278,7 +278,8 @@
       @include wrap-item(calc(50% - 12px), 422px);
     }
     &__title{
-      @include font(24px, 500, #000, 31px);
+      color: black;
+      @include font(24px, 500, 31px);
     }
     &__item-inner{
       padding-left: 20px;
