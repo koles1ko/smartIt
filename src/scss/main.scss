@@ -137,13 +137,13 @@
     min-height: 1067px;
   }
   &__title{
-    text-align: center;
-    @include font(92px, 200, #000, 110px);
+
     // line-height: 110px;
   }
   &__subtitle{
-    text-align: center;
-    @include font(36px, 300, #000, 54px)
+	text-align: center;
+	color: black;
+    @include font(36px, 300, 54px)
   }
   &__item{
     width: 30px;
@@ -471,7 +471,8 @@
   background-color: #fff;
   padding-top: 50px;
   &__title {
-    @include font(36px, 300, #000, 54px);
+	color: black;
+    @include font(36px, 300,54px);
     text-align: center;
   }
   &__items {
@@ -552,11 +553,13 @@
     margin: 0 auto;
   }
   &__item-text{
-    @include font(24px, 200, #000, 43px);
+	color: black;
+    @include font(24px, 200, 43px);
   }
   &__item-link{
-    text-transform: uppercase;
-    @include font(16px, 700, #000, 20px);
+	text-transform: uppercase;
+	color: black;
+    @include font(16px, 700,20px);
     text-align: left;
     padding-right: 34px;
     position: relative;
@@ -620,7 +623,8 @@
     z-index: 10;
   }
   &__item-name {
-    @include font(64px, 300, #fff, 90px);
+	color: white;
+    @include font(64px, 300,  90px);
     max-width: 420px;
   }
   &__item-static{
@@ -702,7 +706,8 @@
     height: auto;
   }
   &__text {
-    @include font(24px, 200, #000, 48px);
+	color: black;
+    @include font(24px, 200,  48px);
     max-width: 803px;
     width: 100%;
     margin-left: 60px;
@@ -718,8 +723,9 @@
     margin-bottom: 70px;
   }
   .tab-link {
-    border: 1px solid $tab-grey;
-    @include font(24px, 200, rgba(#000, .5),43px);
+	border: 1px solid $tab-grey;
+	color: rgba(black, .5);
+    @include font(24px, 200,43px);
     width: 20%;
     @include flex(100%);
     justify-content: center;
@@ -734,8 +740,9 @@
       &--slider{display: none;}
     }
     &.active{
-      background-color: $tab-grey;
-      @include font(24px, 700, #000, 43px);
+	  background-color: $tab-grey;
+	  color: black;
+      @include font(24px, 700,43px);
       position: relative;
       transition: background .4s linear;
       &::before{
@@ -761,12 +768,14 @@
       min-height: 525px;
     }
     &__title {
-      @include font(48px, 400, #000, 58px);
+		color: black;
+      @include font(48px, 400, 58px);
       margin-bottom: 20px;  
     }
   
     &__description {
-      @include font(24px, 200, #000, 43px);
+		color: black;
+      @include font(24px, 200, 43px);
       @include width(1262px);
       margin-bottom: 40px;
     }
@@ -847,10 +856,12 @@
     }
   
     &__position {
-      @include font(18px, 200, #000, 32px);
+		color: black;
+      @include font(18px, 200,  32px);
       span{
-        display: block;
-        @include font(24px, 500, #000, 43px);
+		display: block;
+		color: black;
+        @include font(24px, 500,  43px);
         margin-bottom: 30px;
       }
     }
@@ -873,7 +884,8 @@
       height: 24px;
       background: url(../img/svg/icons/two-stars.svg);
       &-number{
-        @include font(24px, 500, #000, 24px);
+		color: black;
+        @include font(24px, 500, 24px);
         margin-right: 9px;
       }
       li.current{
@@ -908,7 +920,8 @@
     
 
     &__link {
-      @include font(16px, 700, $lightgreen, 20px);
+		color: $lightgreen;
+      @include font(16px, 700, 20px);
       text-transform: uppercase;
       position: relative;
       padding-right: 34px;
@@ -930,8 +943,9 @@
   
     &__text {
       @include width(595px);
-      margin: 0;
-      @include font(18px, 200, #000, 32px);
+	  margin: 0;
+	  color: black;
+      @include font(18px, 200,  32px);
       z-index: 2;
       position: relative;
       &::before{
@@ -1049,7 +1063,8 @@
   }
   .slick-next,
   .slick-prev{
-    @include font(16px, 700, #000, 20px);
+	color: black;
+    @include font(16px, 700,20px);
     text-transform: uppercase;
     z-index: 10;
     text-align: left;
@@ -1132,14 +1147,17 @@
     stroke: #000;
   }
   &__title {
-    @include font(24px,500, #000,43px);
+
+	color: black;
+    @include font(24px,500,43px);
     @include width(462px);
     margin: 0;
     margin-bottom: 10px;
   }
 
   &__text {
-    @include font(17px, 200, #000, 32px);
+	color: black;
+    @include font(17px, 200, 32px);
     margin-bottom: 30px;
   }
   &__link-wrapper{
@@ -1184,7 +1202,8 @@
   }
 
   &__item-number {
-    @include font(96px, 300, #000, 116px);
+	color: black;
+    @include font(96px, 300, 116px);
     position: relative;
     z-index: 2;
   }
@@ -1201,7 +1220,8 @@
     color: $orange;
   }
   &__item-text {
-    @include font(14px, 300, #000, 25px);
+	color: black;
+    @include font(14px, 300,  25px);
     max-width: 227px;
     width: 100%;
   }
@@ -1261,8 +1281,9 @@
       }
     }
     &__title {
-      padding: 39px 80px 39px 33px;
-      @include font(18px, 200, #000, 32px);
+	  padding: 39px 80px 39px 33px;
+	  color: black;
+      @include font(18px, 200,  32px);
       position: relative;
       &:hover{cursor: pointer;}
       &::before{
@@ -1289,8 +1310,9 @@
       padding-left: 33px;
     } 
     &__text {
-      flex: 1 0 auto;
-      @include font(18px, 200, #000, 32px);
+	  flex: 1 0 auto;
+	  color: black;
+      @include font(18px, 200, 32px);
       max-width: 625px;
       padding-right: 20px;
       
@@ -1300,7 +1322,8 @@
       flex: 0 0 auto;
     }
     &__rate {
-      @include font(18px, 400, #000, 32px);
+		color: black;
+      @include font(18px, 400, 32px);
     }
     &__image{
       width: 29px;
@@ -1330,12 +1353,14 @@
     }
   
     &__title {
-      @include font(48px, 400, #fff, 58px);
+		color: white;
+      @include font(48px, 400, 58px);
       margin-bottom: 11px;
     }
   
     &__subtitle {
-      @include font(18px, 200, #fff, 32px);
+		color: white;
+      @include font(18px, 200,  32px);
       margin-bottom: 50px;
     }
     &__check-wrapper{
@@ -1348,8 +1373,9 @@
       label{
         margin-left: 10px;
         padding-left: 28px;
-        position: relative;
-        @include font(18px, 200, #fff, 32px);
+		position: relative;
+		color: white;
+        @include font(18px, 200, 32px);
         &::before{
           position: absolute;
           content: '';
@@ -1396,7 +1422,8 @@
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
-  @include font(24px, 200, #000, 43px);
+  color: black;
+  @include font(24px, 200, 43px);
   &__text{
     @include width(1024px);
     margin-bottom: 70px;
@@ -1509,7 +1536,7 @@
       background-color: $blue;
       z-index: 5;
       color: #fff;
-      @include font(24px, 500, #fff, 43px);
+      @include font(24px, 500,  43px);
       text-align: center;
       clip-path: polygon(0px 0px, 180px 0px, 166px 40px, 0px 40px);
     }
@@ -1553,8 +1580,9 @@
     padding-left: 200px;
   }
   &__date-wrapper {
-    display: flex;
-    @include font(24px, 500, #000, 43px);
+	display: flex;
+	color: black;
+    @include font(24px, 500,  43px);
     margin-bottom: 20px;
   }
 
@@ -1574,22 +1602,25 @@
   }
 
   &__title {
-    @include font(48px, 400, #000, 58px);
+	  color: black;
+    @include font(48px, 400,  58px);
     max-width: 645px;
     width: 100%;
     margin-bottom: 20px;
   }
 
   &__description {
-    @include font(18px, 200, #000, 32px);
+	  color: black;
+    @include font(18px, 200, 32px);
     max-width: 600px;
     width: 100%;
     margin-bottom: 20px;
   }
 
   &__tags {
-    display: flex;
-    @include font(24px, 500, #000, 43px);
+	display: flex;
+	color: black;
+    @include font(24px, 500,  43px);
   }
 
   &__tag {
@@ -1698,8 +1729,9 @@
   }
 
   &__link {
-    padding-left: 27px;
-    @include font(24px, 200, #000, 43px);
+	padding-left: 27px;
+	color: black;
+    @include font(24px, 200,  43px);
     &--map,
     &--phone,
     &--whatsapp,
@@ -1780,8 +1812,9 @@
   }
   &__menu-item {
     max-width: 130px;
-    // height: 25%;
-    @include font(24px, 200, #000, 43px);
+	// height: 25%;
+	color: black;
+    @include font(24px, 200, 43px);
     margin-bottom: 16px;
     &:nth-child(4n){margin-bottom: 0; margin-right: 279px;}
   }
@@ -1810,8 +1843,9 @@
   }
 
   &__copy {
-    @include width(510px);
-    @include font(14px, 300, #000, 14px);
+	@include width(510px);
+	color: black;
+    @include font(14px, 300, 14px);
     display: flex;
     opacity: .3;
     a{
@@ -1821,7 +1855,71 @@
   }
 }
 
-
+.service-intro{
+	color: #000;
+	&__title{
+		margin-bottom: 35px;
+	}
+	&__subtitle{
+		@include width(990px);
+		@include font(24px, 200, 43px);
+		text-align: center;	
+		margin-bottom: 70px;
+	}
+	&__picture{
+		position: relative;
+		&::after{
+			position: absolute;
+			content: '';
+			display: block;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(0deg, #FC6175, #FC6175), linear-gradient(219.19deg, #A0A338 7.1%, #397447 93.9%);
+			opacity: .9;
+			mix-blend-mode: screen;
+		}
+	}
+}
+.service-description{
+	text-align: left;
+	padding-top: 130px;
+	padding-bottom: 100px;
+	&__wrapper{
+		@include width(1290px);
+		margin-bottom: 56px;
+		padding: 0 15px;
+	}
+	&__title{
+		@include font(48px, 400, 58px);
+		margin-bottom: 20px;
+	}
+	&__text,
+	&__list{
+		@include font(24px, 200, 43px);
+	}
+	&__list{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 50px;
+	}
+	&__item{
+		padding-left: 20px;
+		position: relative;
+		&::before{
+			position: absolute;
+			content: '';
+			display: block;
+			top: 18px;
+			left: 0;
+			border-radius: 50%;
+			background-color: #000;
+			width: 9px;
+			height: 9px;
+		}
+	}
+}
 
 
 

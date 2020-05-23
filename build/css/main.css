@@ -408,21 +408,9 @@ template {
 
 @font-face {
   font-family: "Helvetica";
-  src: url("../fonts/Helvetica/HelveticaNeueCyr-Black.woff") format("woff"), url("../fonts/Helvetica/HelveticaNeueCyr-Black.woff2") format("woff2"), url("../fonts/Helvetica/HelveticaNeueCyr-Black.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 900; }
-
-@font-face {
-  font-family: "Helvetica";
   src: url("../fonts/Helvetica/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/Helvetica/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../fonts/Helvetica/HelveticaNeueCyr-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700; }
-
-@font-face {
-  font-family: "Helvetica";
-  src: url("../fonts/Helvetica/HelveticaNeueCyr-Heavy.woff") format("woff"), url("../fonts/Helvetica/HelveticaNeueCyr-Heavy.woff2") format("woff2"), url("../fonts/Helvetica/HelveticaNeueCyr-Heavy.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 900; }
 
 @font-face {
   font-family: "Helvetica";
@@ -648,17 +636,17 @@ body {
   padding: 0 50px; }
 
 .section-title {
+  color: black;
   font-size: 64px;
   font-weight: 300;
-  color: #000;
   line-height: 90px;
   text-align: center;
   text-transform: capitalize; }
 
 .section-description {
+  color: black;
   font-size: 24px;
   font-weight: 200;
-  color: #000;
   line-height: 43px;
   text-align: center; }
 
@@ -701,8 +689,7 @@ body {
   position: relative;
   font-size: 12px;
   font-weight: 700;
-  color: #000;
-  line-height: auto;
+  line-height: #000;
   padding-right: 34px;
   text-transform: uppercase; }
   .dft-link::after {
@@ -718,9 +705,9 @@ body {
     background-repeat: no-repeat; }
 
 .bg-link {
+  color: white;
   font-size: 16px;
   font-weight: 700;
-  color: #fff;
   line-height: 20px;
   padding: 22px 90px;
   text-transform: uppercase;
@@ -734,9 +721,9 @@ body {
   position: absolute;
   left: 0;
   bottom: 11px;
+  color: white;
   font-size: 18px;
   font-weight: 200;
-  color: #fff;
   line-height: 32px;
   z-index: 2;
   -webkit-transition: .3s;
@@ -782,6 +769,13 @@ body {
 .burger-btn.active span:nth-child(3) {
   display: none; }
 
+.intro-title {
+  text-align: center;
+  color: black;
+  font-size: 92px;
+  font-weight: 200;
+  line-height: 110px; }
+
 .breadcrumbs__inner {
   padding: 45px 0 40px; }
 
@@ -811,9 +805,9 @@ body {
             align-items: center;
     margin-right: 13px; }
   .rating-number {
+    color: black;
     font-size: 24px;
     font-weight: 500;
-    color: #000;
     line-height: 24px;
     margin-right: 9px; }
   .rating li.current {
@@ -994,17 +988,11 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 1067px; }
-  .intro__title {
-    text-align: center;
-    font-size: 92px;
-    font-weight: 200;
-    color: #000;
-    line-height: 110px; }
   .intro__subtitle {
     text-align: center;
+    color: black;
     font-size: 36px;
     font-weight: 300;
-    color: #000;
     line-height: 54px; }
   .intro__item {
     width: 30px;
@@ -1302,9 +1290,9 @@ body {
     .trusted--slider .slick-slide {
       width: 170px; }
   .trusted__title {
+    color: black;
     font-size: 36px;
     font-weight: 300;
-    color: #000;
     line-height: 54px;
     text-align: center; }
   .trusted__items {
@@ -1396,15 +1384,15 @@ body {
     min-height: auto;
     margin: 0 auto; }
   .services__item-text {
+    color: black;
     font-size: 24px;
     font-weight: 200;
-    color: #000;
     line-height: 43px; }
   .services__item-link {
     text-transform: uppercase;
+    color: black;
     font-size: 16px;
     font-weight: 700;
-    color: #000;
     line-height: 20px;
     text-align: left;
     padding-right: 34px;
@@ -1469,9 +1457,9 @@ body {
     position: relative;
     z-index: 10; }
   .services__item-name {
+    color: white;
     font-size: 64px;
     font-weight: 300;
-    color: #fff;
     line-height: 90px;
     max-width: 420px; }
   .services__item-static {
@@ -1559,9 +1547,9 @@ body {
     width: 100%;
     height: auto; }
   .wwu__text {
+    color: black;
     font-size: 24px;
     font-weight: 200;
-    color: #000;
     line-height: 48px;
     max-width: 803px;
     width: 100%;
@@ -1578,9 +1566,9 @@ body {
     margin-bottom: 70px; }
   .industries .tab-link {
     border: 1px solid #f2f2f2;
+    color: rgba(0, 0, 0, 0.5);
     font-size: 24px;
     font-weight: 200;
-    color: rgba(0, 0, 0, 0.5);
     line-height: 43px;
     width: 20%;
     display: -webkit-box;
@@ -1618,9 +1606,9 @@ body {
         display: none; }
     .industries .tab-link.active {
       background-color: #f2f2f2;
+      color: black;
       font-size: 24px;
       font-weight: 700;
-      color: #000;
       line-height: 43px;
       position: relative;
       -webkit-transition: background .4s linear;
@@ -1648,15 +1636,15 @@ body {
     .industries .tab-content__inner {
       min-height: 525px; }
     .industries .tab-content__title {
+      color: black;
       font-size: 48px;
       font-weight: 400;
-      color: #000;
       line-height: 58px;
       margin-bottom: 20px; }
     .industries .tab-content__description {
+      color: black;
       font-size: 24px;
       font-weight: 200;
-      color: #000;
       line-height: 43px;
       max-width: 1262px;
       width: 100%;
@@ -1749,15 +1737,15 @@ body {
     background-color: #FAFAFA;
     padding-left: 80px; }
   .reviews .slider-reviews__position {
+    color: black;
     font-size: 18px;
     font-weight: 200;
-    color: #000;
     line-height: 32px; }
     .reviews .slider-reviews__position span {
       display: block;
+      color: black;
       font-size: 24px;
       font-weight: 500;
-      color: #000;
       line-height: 43px;
       margin-bottom: 30px; }
   .reviews .slider-reviews__value {
@@ -1784,9 +1772,9 @@ body {
               align-items: center;
       margin-right: 13px; }
     .reviews .slider-reviews .rating-number {
+      color: black;
       font-size: 24px;
       font-weight: 500;
-      color: #000;
       line-height: 24px;
       margin-right: 9px; }
     .reviews .slider-reviews .rating li.current {
@@ -1825,9 +1813,9 @@ body {
     .reviews .slider-reviews .rating .star-5:hover {
       width: 120px; }
   .reviews .slider-reviews__link {
+    color: #A5DC4B;
     font-size: 16px;
     font-weight: 700;
-    color: #A5DC4B;
     line-height: 20px;
     text-transform: uppercase;
     position: relative;
@@ -1850,9 +1838,9 @@ body {
     width: 100%;
     margin: 0 auto;
     margin: 0;
+    color: black;
     font-size: 18px;
     font-weight: 200;
-    color: #000;
     line-height: 32px;
     z-index: 2;
     position: relative; }
@@ -1977,9 +1965,9 @@ body {
         background-size: contain; }
   .reviews .slick-next,
   .reviews .slick-prev {
+    color: black;
     font-size: 16px;
     font-weight: 700;
-    color: #000;
     line-height: 20px;
     text-transform: uppercase;
     z-index: 10;
@@ -2048,9 +2036,9 @@ body {
     fill: transparent;
     stroke: #000; }
   .story__title {
+    color: black;
     font-size: 24px;
     font-weight: 500;
-    color: #000;
     line-height: 43px;
     max-width: 462px;
     width: 100%;
@@ -2058,9 +2046,9 @@ body {
     margin: 0;
     margin-bottom: 10px; }
   .story__text {
+    color: black;
     font-size: 17px;
     font-weight: 200;
-    color: #000;
     line-height: 32px;
     margin-bottom: 30px; }
   .story__link-wrapper {
@@ -2104,9 +2092,9 @@ body {
     .story__item:nth-child(1) .story__item-text {
       padding-left: 10px; }
   .story__item-number {
+    color: black;
     font-size: 96px;
     font-weight: 300;
-    color: #000;
     line-height: 116px;
     position: relative;
     z-index: 2; }
@@ -2119,9 +2107,9 @@ body {
   .story--orange {
     color: #FD9E6D; }
   .story__item-text {
+    color: black;
     font-size: 14px;
     font-weight: 300;
-    color: #000;
     line-height: 25px;
     max-width: 227px;
     width: 100%; }
@@ -2204,9 +2192,9 @@ body {
 
 .faq .accordion__title {
   padding: 39px 80px 39px 33px;
+  color: black;
   font-size: 18px;
   font-weight: 200;
-  color: #000;
   line-height: 32px;
   position: relative; }
   .faq .accordion__title:hover {
@@ -2243,9 +2231,9 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  color: black;
   font-size: 18px;
   font-weight: 200;
-  color: #000;
   line-height: 32px;
   max-width: 625px;
   padding-right: 20px; }
@@ -2257,9 +2245,9 @@ body {
           flex: 0 0 auto; }
 
 .faq .accordion__rate {
+  color: black;
   font-size: 18px;
   font-weight: 400;
-  color: #000;
   line-height: 32px; }
 
 .faq .accordion__image {
@@ -2290,16 +2278,16 @@ body {
   text-align: left; }
 
 .faq .faq-form__title {
+  color: white;
   font-size: 48px;
   font-weight: 400;
-  color: #fff;
   line-height: 58px;
   margin-bottom: 11px; }
 
 .faq .faq-form__subtitle {
+  color: white;
   font-size: 18px;
   font-weight: 200;
-  color: #fff;
   line-height: 32px;
   margin-bottom: 50px; }
 
@@ -2317,9 +2305,9 @@ body {
     margin-left: 10px;
     padding-left: 28px;
     position: relative;
+    color: white;
     font-size: 18px;
     font-weight: 200;
-    color: #fff;
     line-height: 32px; }
     .faq .faq-form__check label::before {
       position: absolute;
@@ -2361,9 +2349,9 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
+  color: black;
   font-size: 24px;
   font-weight: 200;
-  color: #000;
   line-height: 43px; }
   .about__text {
     max-width: 1024px;
@@ -2486,7 +2474,6 @@ body {
       color: #fff;
       font-size: 24px;
       font-weight: 500;
-      color: #fff;
       line-height: 43px;
       text-align: center;
       -webkit-clip-path: polygon(0px 0px, 180px 0px, 166px 40px, 0px 40px);
@@ -2537,9 +2524,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    color: black;
     font-size: 24px;
     font-weight: 500;
-    color: #000;
     line-height: 43px;
     margin-bottom: 20px; }
   .news__date {
@@ -2555,17 +2542,17 @@ body {
       height: 24px;
       background-color: #000; }
   .news__title {
+    color: black;
     font-size: 48px;
     font-weight: 400;
-    color: #000;
     line-height: 58px;
     max-width: 645px;
     width: 100%;
     margin-bottom: 20px; }
   .news__description {
+    color: black;
     font-size: 18px;
     font-weight: 200;
-    color: #000;
     line-height: 32px;
     max-width: 600px;
     width: 100%;
@@ -2574,9 +2561,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    color: black;
     font-size: 24px;
     font-weight: 500;
-    color: #000;
     line-height: 43px; }
   .news__tag + .news__tag {
     margin-left: 40px; }
@@ -2685,9 +2672,9 @@ body {
       margin-top: 20px; }
   .footer__link {
     padding-left: 27px;
+    color: black;
     font-size: 24px;
     font-weight: 200;
-    color: #000;
     line-height: 43px; }
     .footer__link--map, .footer__link--phone, .footer__link--whatsapp, .footer__link--skype, .footer__link--facebook {
       position: relative; }
@@ -2755,9 +2742,9 @@ body {
         flex-wrap: wrap; }
   .footer__menu-item {
     max-width: 130px;
+    color: black;
     font-size: 24px;
     font-weight: 200;
-    color: #000;
     line-height: 43px;
     margin-bottom: 16px; }
     .footer__menu-item:nth-child(4n) {
@@ -2783,9 +2770,9 @@ body {
     max-width: 510px;
     width: 100%;
     margin: 0 auto;
+    color: black;
     font-size: 14px;
     font-weight: 300;
-    color: #000;
     line-height: 14px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2794,6 +2781,75 @@ body {
     .footer__copy a {
       margin-left: 30px;
       text-decoration: underline; }
+
+.service-intro {
+  color: #000; }
+  .service-intro__title {
+    margin-bottom: 35px; }
+  .service-intro__subtitle {
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: 70px; }
+  .service-intro__picture {
+    position: relative; }
+    .service-intro__picture::after {
+      position: absolute;
+      content: '';
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: -o-linear-gradient(bottom, #FC6175, #FC6175), -o-linear-gradient(230.81deg, #A0A338 7.1%, #397447 93.9%);
+      background: linear-gradient(0deg, #FC6175, #FC6175), linear-gradient(219.19deg, #A0A338 7.1%, #397447 93.9%);
+      opacity: .9;
+      mix-blend-mode: screen; }
+
+.service-description {
+  text-align: left;
+  padding-top: 130px;
+  padding-bottom: 100px; }
+  .service-description__wrapper {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    padding: 0 15px; }
+  .service-description__title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+    margin-bottom: 20px; }
+  .service-description__text, .service-description__list {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 43px; }
+  .service-description__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 50px; }
+  .service-description__item {
+    padding-left: 20px;
+    position: relative; }
+    .service-description__item::before {
+      position: absolute;
+      content: '';
+      display: block;
+      top: 18px;
+      left: 0;
+      border-radius: 50%;
+      background-color: #000;
+      width: 9px;
+      height: 9px; }
 
 @media (max-width: 1900px) {
   .points {
@@ -3005,9 +3061,9 @@ body {
     width: calc(50% - 12px);
     min-height: 422px; }
   .news__title {
+    color: black;
     font-size: 24px;
     font-weight: 500;
-    color: #000;
     line-height: 31px; }
   .news__item-inner {
     padding-left: 20px;

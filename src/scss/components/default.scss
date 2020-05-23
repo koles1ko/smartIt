@@ -196,12 +196,14 @@ body {
   padding: 0 50px;
 }
 .section-title{
-  @include font(64px, 300, #000, 90px);
+  color: black;
+  @include font(64px, 300,  90px);
   text-align: center;
   text-transform: capitalize;
 }
 .section-description{
-  @include font(24px, 200, #000, 43px);
+  color: black;
+  @include font(24px, 200,  43px);
   text-align: center;
 }
 .points{
@@ -251,7 +253,8 @@ body {
   }
 }
 .bg-link{
-  @include font(16px, 700, #fff, 20px);
+  color: white;
+  @include font(16px, 700,  20px);
   padding: 22px 90px;
   text-transform: uppercase;
   border: none;
@@ -262,7 +265,8 @@ body {
   position: absolute;
   left: 0;
   bottom: 11px;
-  @include font(18px, 200, #fff, 32px);
+  color: white;
+  @include font(18px, 200,  32px);
   z-index: 2;
   transition: .3s;
 }
@@ -301,4 +305,9 @@ body {
       &:nth-child(3){display: none;}
     }
   }
+}
+.intro-title{
+  text-align: center;
+  color: black;
+  @include font(92px, 200, 110px);
 }
