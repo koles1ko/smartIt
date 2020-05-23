@@ -218,7 +218,7 @@ function watch() {
     // tunnel: true
   });
   // Наблюдение за html файлами
-  // gulp.watch(path.watch.html, html);
+  gulp.watch(path.watch.html, html);
   gulp.watch(path.watch.pages, pug);
   // Наблюдение за scss файлами
   gulp.watch(path.watch.styles, styles);

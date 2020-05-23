@@ -1,0 +1,23 @@
+.service-subtitle{
+   @include font(24px, 200, #000, 43px);
+   text-align: center;
+}
+.service-intro{
+   &__subtitle{
+      @include width(980px);
+   }
+   &__picture{
+      margin-top: 70px;
+      width: 100%;
+      position: relative;
+      img{
+         display: block;
+         width: 100%;
+         height: auto;
+      }
+   }
+   .layout--pink{
+      background: linear-gradient(0deg, #FC6175, #FC6175), linear-gradient(219.19deg, #A0A338 7.1%, #397447 93.9%);
+      opacity: .4;
+   }
+}
