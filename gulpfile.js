@@ -182,7 +182,7 @@ function svg() {
     .pipe(
       svgmin({
         plugins: [{
-          removeViewBox: false
+          removeViewBox: true
         }]
       })
     ) // минимизируем svg перед созданием спрайта

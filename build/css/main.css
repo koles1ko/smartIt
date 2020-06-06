@@ -2851,6 +2851,45 @@ body {
       width: 9px;
       height: 9px; }
 
+.service-buiseness {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .service-buiseness__inner {
+    max-width: 1295px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center; }
+  .service-buiseness__description {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 43px; }
+  .service-buiseness__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 70px; }
+  .service-buiseness__item {
+    max-width: 322px;
+    width: 100%; }
+  .service-buiseness__item-image {
+    fill: transparent;
+    stroke: black;
+    width: 82px;
+    height: 82px;
+    margin-bottom: 11px; }
+  .service-buiseness__item-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 43px; }
+  .service-buiseness__item-text {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 32px; }
+
 @media (max-width: 1900px) {
   .points {
     max-width: 360px;

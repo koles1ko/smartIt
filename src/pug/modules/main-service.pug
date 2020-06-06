@@ -23,3 +23,40 @@ main
 				li.service-description__item now use Lorem Ipsum
 	block wwu
 		include section-wwu
+	section.service-buiseness
+		.service-buiseness__inner
+			.service-buiseness__title.section-title Business Message
+			.service-buiseness__description Smart IT provides both application integration consulting and application integration services to companies looking to upgrade their software products. We are not afraid to get into the nitty gritty of communication components between systems, whether that means API or blockchain integrations. We take pride in being able to solve complex technological challenges that come with the requirements of running a successful business.
+			.service-buiseness__items
+				.service-buiseness__item
+					.service-buiseness__item-picture
+						+svg('service-buiseness__item-image service-buiseness__image--star', 'buisinnes-image-11')
+					.service-buisennes__description
+						.service-buiseness__item-title On-demand expertise
+						.service-buiseness__item-text Rapidly expand your product feature base
+				.service-buiseness__item
+					.service-buiseness__item-picture
+						+svg('service-buiseness__item-image service-buiseness__image--thunder', 'buisinnes-image-22')
+					.service-buisennes__description
+						.service-buiseness__item-title Fast knowledge transfer
+						.service-buiseness__item-text Make efficient use of time to become productive fast
+				.service-buiseness__item
+					.service-buiseness__item-picture
+						+svg('service-buiseness__item-image service-buiseness__image--infinity', 'buisinnes-image-33')
+					.service-buisennes__description
+						.service-buiseness__item-title Integrations to last
+						.service-buiseness__item-text Quality comes first
+	section.service-expertise
+		.service-expertise__inner
+			.service-expertise__tabs-wrapper.tabs
+				//- вкладки
+				.service-expertise__trigger-wrapper.tab-link__wrapper.tab-link__wrapper--static 
+					.tab-link.js-trigger.active(data-tab="1") 
+					.tab-link.js-trigger(data-tab="2") 
+					.tab-link.js-trigger(data-tab="3") 
+					.tab-link.js-trigger(data-tab="4") 
+					.tab-link.js-trigger(data-tab="5") 
+				//- контент
+				.service-expertise__content-wrapper.tab-content__wrapper 
+					.tab-content.js-content.active-tab(data-tab="1") content for "First item"
+					.tab-content.js-content(data-tab="2") content for "Second item"		

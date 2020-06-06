@@ -36,6 +36,7 @@ mixin stars
 //- добавление svg графики (blockName - имя блока в начале класса, nameID - имя иконки = имя ID)
 mixin svg(blockName, nameID)
    - var href= "img/sprite.svg#"+nameID
-      svg(class=blockName + "__image")
+      svg(class=blockName)
          use(xlink:href=href) 
+
 
