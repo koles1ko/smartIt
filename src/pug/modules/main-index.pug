@@ -234,41 +234,42 @@ section.reviews
 
 section.story
   +points("aqua")
-  h3.section-title Featured success story
-  .story__inner
-    .story__description
-      +points("aqua")
-      svg.story__image
-        use(xlink:href="img/sprite.svg#custom")
-      h5.story__title Custom CRM Development fo Zaman Broker
-      p.story__text Insurance and Reinsurance Operator Zaman Broker turned to Smart IT to scale and automate business processes by implementing a robust Customer Relationship Management (CRM) system. The dedicated development team seamlessly migrated the functionality of the previous system without disruption to daily operation. The new system was enhanced with sales pipeline management, call center functionality, and custom report building to accommodate the running of the business.
-      a.dft-link.story__description-link(href="#") discover
-    .story__slider
-      .story__slider-inner
-        .story__slider-image.story__slider-image--mac
-          img(src="img/raster/story/macbook.webp", alt="notebook")
-      .story__slider-inner
-        .story__slider-image
-          img(src="img/raster/story/smartphone.webp", alt="smartphone")
-      .story__slider-inner
-        .story__slider-image
-          img(src="img/raster/story/chart.webp", alt="chart")        
-    .story__numbers
-      .story__items
-        .story__item
-          .story__item-number.story--aqua 100%
-          .story__item-text compliance with the predefined testing roadmap
-        .story__item
-          .story__item-number.story--pink 35%
-          .story__item-text growth after implementation
-        .story__item
-          .story__item-number.story--purple 6
-          .story__item-text full-time software developers
-        .story__item
-          .story__item-number.story--orange 9
-          .story__item-text technologies employed
-  .story__link-wrapper
-    a.story__link.bg-link(href="#") view all cases        
+  .container
+    h3.section-title Featured success story
+    .story__inner
+      .story__description
+        +points("aqua")
+        svg.story__image
+          use(xlink:href="img/sprite.svg#custom")
+        h5.story__title Custom CRM Development fo Zaman Broker
+        p.story__text Insurance and Reinsurance Operator Zaman Broker turned to Smart IT to scale and automate business processes by implementing a robust Customer Relationship Management (CRM) system. The dedicated development team seamlessly migrated the functionality of the previous system without disruption to daily operation. The new system was enhanced with sales pipeline management, call center functionality, and custom report building to accommodate the running of the business.
+        a.dft-link.story__description-link(href="#") discover
+      .story__slider
+        .story__slider-inner
+          .story__slider-image.story__slider-image--mac
+            img(src="img/raster/story/macbook.webp", alt="notebook")
+        .story__slider-inner
+          .story__slider-image
+            img(src="img/raster/story/smartphone.webp", alt="smartphone")
+        .story__slider-inner
+          .story__slider-image
+            img(src="img/raster/story/chart.webp", alt="chart")        
+      .story__numbers
+        .story__items
+          .story__item
+            .story__item-number.story--aqua 100%
+            .story__item-text compliance with the predefined testing roadmap
+          .story__item
+            .story__item-number.story--pink 35%
+            .story__item-text growth after implementation
+          .story__item
+            .story__item-number.story--purple 6
+            .story__item-text full-time software developers
+          .story__item
+            .story__item-number.story--orange 9
+            .story__item-text technologies employed
+    .story__link-wrapper
+      a.story__link.bg-link(href="#") view all cases        
 
 block faq
   include section-faq

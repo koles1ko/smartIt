@@ -1,112 +1,113 @@
 section.faq
-   h3.section-title FAQ
-   .faq__inner
-      .faq__accordion.accordion
-         .accordion__item.js-wrapper(data-tab="1st")
-            .accordion__title.js-label(data-tab="1st") I didn't see my industry among the ones listed. Do you work in other domains?
-            .accordion__info
-               .accordion__text The short answer is yes. While we do have expertise in the featured domains, we are not restricted to working in a narrow field. If the solution you are looking for belongs to a different industry, we will be happy to learn as much as we can to offer our help. Our Business Analysis team can identify your paint points and challenges to make sure we approach your solution fully prepared.
-               .accordion__rate-wrapper
-               a.accordion__rate(href="#") Did we help?
-                  span.accordion__y 
-                     +svg('accordion', 'yes')
-                  span.accordion__n 
-                     +svg('accordion', 'no')
-         .accordion__item.js-wrapper(data-tab="2nd")
-            .accordion__title.js-label(data-tab="2nd") Are these all of the services you provide?
-            .accordion__info
-               .accordion__text The short answer is yes. While we do have expertise in the featured domains, we are not restricted to working in a narrow field. If the solution you are looking for belongs to a different industry, we will be happy to learn as much as we can to offer our help. Our Business Analysis team can identify your paint points and challenges to make sure we approach your solution fully prepared.
-               .accordion__rate-wrapper
-               a.accordion__rate(href="#") Did we help?
-                  span.accordion__y 
-                     +svg('accordion', 'yes')
-                  span.accordion__n 
-                     +svg('accordion', 'no')
-         .accordion__item.js-wrapper(data-tab="3rd")
-            .accordion__title.js-label(data-tab="3rd") Can we sign an NDA?
-            .accordion__info
-               .accordion__text
-               .accordion__rate-wrapper
-               a.accordion__rate(href="#") Did we help?
-                  span.accordion__y 
-                     +svg('accordion', 'yes')
-                  span.accordion__n 
-                     +svg('accordion', 'no')
-         .accordion__item.js-wrapper(data-tab="4rd")
-            .accordion__title.js-label(data-tab="4rd") What are your cooperation models?
-            .accordion__info
-               .accordion__text The short answer is yes. While we do have expertise in the featured domains, we are not restricted to working in a narrow field. If the solution you are looking for belongs to a different industry, we will be happy to learn as much as we can to offer our help. Our Business Analysis team can identify your paint points and challenges to make sure we approach your solution fully prepared.
-               .accordion__rate-wrapper
+   .container
+      h3.section-title FAQ
+      .faq__inner
+         .faq__accordion.accordion
+            .accordion__item.js-wrapper(data-tab="1st")
+               .accordion__title.js-label(data-tab="1st") I didn't see my industry among the ones listed. Do you work in other domains?
+               .accordion__info
+                  .accordion__text The short answer is yes. While we do have expertise in the featured domains, we are not restricted to working in a narrow field. If the solution you are looking for belongs to a different industry, we will be happy to learn as much as we can to offer our help. Our Business Analysis team can identify your paint points and challenges to make sure we approach your solution fully prepared.
+                  .accordion__rate-wrapper
                   a.accordion__rate(href="#") Did we help?
                      span.accordion__y 
                         +svg('accordion', 'yes')
                      span.accordion__n 
                         +svg('accordion', 'no')
-         .accordion__item.js-wrapper(data-tab="5rd")
-            .accordion__title.js-label(data-tab="5rd") How do you assemble my dedicated team?
-            .accordion__info
-               .accordion__text The short answer is yes. While we do have expertise in the featured domains, we are not restricted to working in a narrow field. If the solution you are looking for belongs to a different industry, we will be happy to learn as much as we can to offer our help. Our Business Analysis team can identify your paint points and challenges to make sure we approach your solution fully prepared.
-               .accordion__rate-wrapper
-               a.accordion__rate(href="#") Did we help?
-                  span.accordion__y 
-                     +svg('accordion', 'yes')
-                  span.accordion__n 
-                     +svg('accordion', 'no')
-         .accordion__item.js-wrapper(data-tab="6rd")
-            .accordion__title.js-label(data-tab="6rd") How will I communicate with my team?
-            .accordion__info
-               .accordion__text The short answer is yes. While we do have expertise in the featured domains, we are not restricted to working in a narrow field. If the solution you are looking for belongs to a different industry, we will be happy to learn as much as we can to offer our help. Our Business Analysis team can identify your paint points and challenges to make sure we approach your solution fully prepared.
-               .accordion__rate-wrapper
-               a.accordion__rate(href="#") Did we help?
-                  span.accordion__y 
-                     +svg('accordion', 'yes')
-                  span.accordion__n 
-                     +svg('accordion', 'no')
-         .accordion__item.js-wrapper(data-tab="7rd")
-            .accordion__title.js-label(data-tab="7rd") Can we work across different time zones?
-            .accordion__info
-               .accordion__text The short answer is yes. While we do have expertise in the featured domains, we are not restricted to working in a narrow field. If the solution you are looking for belongs to a different industry, we will be happy to learn as much as we can to offer our help. Our Business Analysis team can identify your paint points and challenges to make sure we approach your solution fully prepared.
-               .accordion__rate-wrapper
-               a.accordion__rate(href="#") Did we help?
-                  span.accordion__y 
-                     +svg('accordion', 'yes')
-                  span.accordion__n 
-                     +svg('accordion', 'no')
-         .accordion__item.js-wrapper(data-tab="8rd")
-            .accordion__title.js-label(data-tab="8rd") Will I have to make my work with you public?
-            .accordion__info
-               .accordion__text The short answer is yes. While we do have expertise in the featured domains, we are not restricted to working in a narrow field. If the solution you are looking for belongs to a different industry, we will be happy to learn as much as we can to offer our help. Our Business Analysis team can identify your paint points and challenges to make sure we approach your solution fully prepared.
-               .accordion__rate-wrapper
-               a.accordion__rate(href="#") Did we help?
-                  span.accordion__y 
-                     +svg('accordion', 'yes')
-                  span.accordion__n 
-                     +svg('accordion', 'no')
-      .faq-form__wrapper
-         h4.faq-form__title Still have questions?
-         .faq-form__subtitle Before asking questions check all that apply
-         form.faq-form(action="")
-            .faq-form__check-wrapper
-               .faq-form__check
-                  input#check-1(type="radio", name="faq-check")
-                  label(for="check-1") Expertise
-               .faq-form__check
-                  input#check-2(type="radio", name="faq-check")
-                  label(for="check-2") Rates
-               .faq-form__check
-                  input#check-3(type="radio", name="faq-check")
-                  label(for="check-3") Stack
-               .faq-form__check
-                  input#check-4(type="radio", name="faq-check")
-                  label(for="check-4") Other
-            div
-               .faq-form__data
-                  input.form-trigger#name(type="text")
-                  label.form-focus(for="#name") Full Name
-               .faq-form__data
-                  input.form-trigger#email(type="text")
-                  label.form-focus(for="#email") Email
-               .faq-form__data
-                  input.form-trigger#message(type="text")
-                  label.form-focus(for="#message") Message
-               button.faq-form__button.bg-link(type="submit") submit
+            .accordion__item.js-wrapper(data-tab="2nd")
+               .accordion__title.js-label(data-tab="2nd") Are these all of the services you provide?
+               .accordion__info
+                  .accordion__text The short answer is yes. While we do have expertise in the featured domains, we are not restricted to working in a narrow field. If the solution you are looking for belongs to a different industry, we will be happy to learn as much as we can to offer our help. Our Business Analysis team can identify your paint points and challenges to make sure we approach your solution fully prepared.
+                  .accordion__rate-wrapper
+                  a.accordion__rate(href="#") Did we help?
+                     span.accordion__y 
+                        +svg('accordion', 'yes')
+                     span.accordion__n 
+                        +svg('accordion', 'no')
+            .accordion__item.js-wrapper(data-tab="3rd")
+               .accordion__title.js-label(data-tab="3rd") Can we sign an NDA?
+               .accordion__info
+                  .accordion__text
+                  .accordion__rate-wrapper
+                  a.accordion__rate(href="#") Did we help?
+                     span.accordion__y 
+                        +svg('accordion', 'yes')
+                     span.accordion__n 
+                        +svg('accordion', 'no')
+            .accordion__item.js-wrapper(data-tab="4rd")
+               .accordion__title.js-label(data-tab="4rd") What are your cooperation models?
+               .accordion__info
+                  .accordion__text The short answer is yes. While we do have expertise in the featured domains, we are not restricted to working in a narrow field. If the solution you are looking for belongs to a different industry, we will be happy to learn as much as we can to offer our help. Our Business Analysis team can identify your paint points and challenges to make sure we approach your solution fully prepared.
+                  .accordion__rate-wrapper
+                     a.accordion__rate(href="#") Did we help?
+                        span.accordion__y 
+                           +svg('accordion', 'yes')
+                        span.accordion__n 
+                           +svg('accordion', 'no')
+            .accordion__item.js-wrapper(data-tab="5rd")
+               .accordion__title.js-label(data-tab="5rd") How do you assemble my dedicated team?
+               .accordion__info
+                  .accordion__text The short answer is yes. While we do have expertise in the featured domains, we are not restricted to working in a narrow field. If the solution you are looking for belongs to a different industry, we will be happy to learn as much as we can to offer our help. Our Business Analysis team can identify your paint points and challenges to make sure we approach your solution fully prepared.
+                  .accordion__rate-wrapper
+                  a.accordion__rate(href="#") Did we help?
+                     span.accordion__y 
+                        +svg('accordion', 'yes')
+                     span.accordion__n 
+                        +svg('accordion', 'no')
+            .accordion__item.js-wrapper(data-tab="6rd")
+               .accordion__title.js-label(data-tab="6rd") How will I communicate with my team?
+               .accordion__info
+                  .accordion__text The short answer is yes. While we do have expertise in the featured domains, we are not restricted to working in a narrow field. If the solution you are looking for belongs to a different industry, we will be happy to learn as much as we can to offer our help. Our Business Analysis team can identify your paint points and challenges to make sure we approach your solution fully prepared.
+                  .accordion__rate-wrapper
+                  a.accordion__rate(href="#") Did we help?
+                     span.accordion__y 
+                        +svg('accordion', 'yes')
+                     span.accordion__n 
+                        +svg('accordion', 'no')
+            .accordion__item.js-wrapper(data-tab="7rd")
+               .accordion__title.js-label(data-tab="7rd") Can we work across different time zones?
+               .accordion__info
+                  .accordion__text The short answer is yes. While we do have expertise in the featured domains, we are not restricted to working in a narrow field. If the solution you are looking for belongs to a different industry, we will be happy to learn as much as we can to offer our help. Our Business Analysis team can identify your paint points and challenges to make sure we approach your solution fully prepared.
+                  .accordion__rate-wrapper
+                  a.accordion__rate(href="#") Did we help?
+                     span.accordion__y 
+                        +svg('accordion', 'yes')
+                     span.accordion__n 
+                        +svg('accordion', 'no')
+            .accordion__item.js-wrapper(data-tab="8rd")
+               .accordion__title.js-label(data-tab="8rd") Will I have to make my work with you public?
+               .accordion__info
+                  .accordion__text The short answer is yes. While we do have expertise in the featured domains, we are not restricted to working in a narrow field. If the solution you are looking for belongs to a different industry, we will be happy to learn as much as we can to offer our help. Our Business Analysis team can identify your paint points and challenges to make sure we approach your solution fully prepared.
+                  .accordion__rate-wrapper
+                  a.accordion__rate(href="#") Did we help?
+                     span.accordion__y 
+                        +svg('accordion', 'yes')
+                     span.accordion__n 
+                        +svg('accordion', 'no')
+         .faq-form__wrapper
+            h4.faq-form__title Still have questions?
+            .faq-form__subtitle Before asking questions check all that apply
+            form.faq-form(action="")
+               .faq-form__check-wrapper
+                  .faq-form__check
+                     input#check-1(type="radio", name="faq-check")
+                     label(for="check-1") Expertise
+                  .faq-form__check
+                     input#check-2(type="radio", name="faq-check")
+                     label(for="check-2") Rates
+                  .faq-form__check
+                     input#check-3(type="radio", name="faq-check")
+                     label(for="check-3") Stack
+                  .faq-form__check
+                     input#check-4(type="radio", name="faq-check")
+                     label(for="check-4") Other
+               div
+                  .faq-form__data
+                     input.form-trigger#name(type="text")
+                     label.form-focus(for="#name") Full Name
+                  .faq-form__data
+                     input.form-trigger#email(type="text")
+                     label.form-focus(for="#email") Email
+                  .faq-form__data
+                     input.form-trigger#message(type="text")
+                     label.form-focus(for="#message") Message
+                  button.faq-form__button.bg-link(type="submit") submit
